@@ -22,19 +22,36 @@
       font-weight: 600;
     }
     nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: black;
-      font-weight: 500;
-    }
-    nav a.active { 
-      font-weight: bold; 
-      text-decoration: underline;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding-bottom: 1px; /* space for underline */
     }
 
-    nav a:hover {
-      text-decoration: underline;  
-    } 
+    /* underline animation */
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: black;
+      transform: translateX(-50%);
+      transition: width 0.3s ease;
+    }
+
+    /* hover expand */
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* active link: stays fully underlined */
+    nav a.active::after {
+      width: 100%;
+    }
     .header-right {
       display: flex;
       align-items: center;

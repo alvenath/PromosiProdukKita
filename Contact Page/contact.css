@@ -102,33 +102,48 @@ header {
 
 
 /* HERO */
-.hero {
-  text-align: center;
-  background: #ccc;
-  padding: 4rem 1rem;
+
+.hero { 
+  text-align: center; 
+  background: #ccc; 
+  background-image: url("../Banner/banner.jpeg"); 
+  padding: 4rem 1rem; 
 }
 
 .hero h1 {
+  color: white;
   font-size: 2rem;
   font-weight: 700;
+
+  /* animation start state */
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 0.8s ease-out;
 }
 
 .hero p {
   margin-top: 0.5rem;
-  color: #333;
+  color: white;
+
+  /* animation start state */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+  transition-delay: 0.5s;
 }
 
-.hero .image-placeholder {
-  margin: 2rem auto 0;
-  width: 300px;
-  height: 150px;
-  background: #bfbfbf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  font-size: 0.9rem;
+/* when visible */
+.hero.show h1 {
+  opacity: 1;
+  transform: translateY(0);
 }
+
+.hero.show p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 /* PROMOTION SECTION */
 .promo-section {
@@ -145,6 +160,14 @@ header {
 .promo-text {
   flex: 1;
   min-width: 280px;
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.promo-text.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .promo-text h2 {
@@ -152,6 +175,13 @@ header {
   font-weight: 700;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+}
+
+.promo-text h2,
+.promo-text button {
+  opacity: 0;
+  transform: translateX(-25px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .promo-text button {
@@ -167,6 +197,18 @@ header {
 
 .promo-text button:hover {
   background: #1d4ed8;
+}
+
+.promo-text.show h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Button appears second */
+.promo-text.show button {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1s;
 }
 
 /* PROMOTION SECTION */
@@ -303,6 +345,11 @@ header {
   font-weight: 600;
   font-size: 12px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-info .wishlist:hover {
+  background-color: #444;
 }
 
 .product-info .buy {
@@ -314,7 +361,45 @@ header {
   font-weight: 600;
   font-size: 12px;
   cursor: pointer;
+  transition: 0.3s;
 }
+
+.product-info .buy:hover {
+  background-color: rgb(2, 128, 2);
+}
+
+/* INITIAL HIDDEN STATE */
+.product-preview {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.product-preview.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Optional: stagger inner elements for extra polish */
+.product-image,
+.product-info {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.product-preview.show .product-image {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.15s;
+}
+
+.product-preview.show .product-info {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
 
 
     /* Footer */

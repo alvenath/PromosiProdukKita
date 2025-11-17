@@ -4,7 +4,7 @@ body {
   color: #111;
 }
 
-/* HEADER SAME AS HOME */
+/* HEADER */
     header {
       display: flex;
       justify-content: space-between;
@@ -27,10 +27,9 @@ body {
     text-decoration: none;
     color: black;
     font-weight: 500;
-    padding-bottom: 1px; /* space for underline */
+    padding-bottom: 1px;
     }
 
-    /* underline animation */
     nav a::after {
       content: "";
       position: absolute;
@@ -43,12 +42,10 @@ body {
       transition: width 0.3s ease;
     }
 
-    /* hover expand */
     nav a:hover::after {
       width: 100%;
     }
 
-    /* active link: stays fully underlined */
     nav a.active::after {
       width: 100%;
     }
@@ -101,13 +98,29 @@ body {
   background: #ddd;
   text-align: left;
   padding: 80px 20px;
+  background-image: url("../Banner/banner.jpeg");
 }
-.hero-content h2 { 
-  font-size: 34px; margin: 0 50px 10px; 
+.hero-content h2 {
+  color: white;
+  font-size: 34px;
+  margin: 0 50px 10px;
+
+  /* animation */
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideLeft 0.6s ease-out forwards;
+  animation-delay: 0.2s;
 }
 
 .hero-content p { 
-  font-size: 19px; margin: 0 50px 10px; 
+  color: white; 
+  font-size: 19px; 
+  margin: 0 50px 10px; 
+
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideLeft 0.6s ease-out forwards;
+  animation-delay: 0.6s;
 }
 
 .btn {
@@ -119,6 +132,17 @@ body {
   border-radius: 5px; 
   margin: 15px 50px 15px;
   transition: 0.3s;
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideLeft 0.6s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .btn:hover {
@@ -138,18 +162,36 @@ body {
   max-width: 600px;
   font-size: 18px;
   line-height: 1.6;
+  opacity: 0;
+  transform: translateX(-60px); /* from left */
+  transition: all 0.7s ease-out;
 }
 
-.about-text h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+.about-text.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .about-image img {
   width: 350px;
   max-width: 100%;
   height: auto;
+  opacity: 0;
+  transform: translateX(60px); /* from right */
+  transition: all 0.7s ease-out;
 }
+
+.about-image.show img {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.about-image.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* NILAI KAMI */
 .values { 
   text-align: center; 
@@ -162,14 +204,22 @@ body {
   gap: 60px; 
 }
 
-.value-box div { 
-  text-align: 
-  center; 
+.value-box div {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px); /* slide up */
+  transition: all 0.6s ease-out;
 }
 
-.icon { 
-  font-size: 38px; 
+.value-box div.show {
+  opacity: 1;
+  transform: translateY(0);
 }
+
+.icon {
+  font-size: 38px;
+}
+
 
 /* TEAM */
 .team {
@@ -193,13 +243,23 @@ body {
 }
 
 .member {
-  flex: 0 0 calc(20% - 24px); 
+  flex: 0 0 calc(20% - 24px);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-width: 100px; 
+  min-width: 100px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
 }
+
+.member.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .pfp {
   width: 100px;
@@ -250,6 +310,18 @@ body {
   justify-content: center; 
   gap: 70px 120px; 
 }
+
+.metrics-grid > div {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.metrics-grid > div.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .metrics-grid h3 {
   font-size: 25px;
 } 
@@ -259,25 +331,45 @@ body {
 } 
 
 /* CTA */
-.cta { 
-  text-align: center; 
-  padding: 70px 20px; 
+.cta {
+  text-align: center;
+  padding: 70px 20px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-out;
 }
 
-.cta a { 
-  display: inline-block; 
+.cta.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cta a {
+  display: inline-block;
   padding: 10px 20px;
   background: black; 
   color: white; 
   text-decoration: none;
   border-radius: 5px; 
   margin: 15px 50px 15px;
-  transition: 0.3s;
+  transition: 0.2s;
+  
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s ease-out;
+}
+
+.cta.show a {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s; /* button appears slightly after section */
 }
 
 .cta a:hover {
   background-color: #353535;
 }
+
 
 /* FOOTER */
     footer {

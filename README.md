@@ -70,17 +70,16 @@ Gambar aset yang kemungkinan digunakan sebagai referensi atau contoh tampilan.
 
 * HTML5
 * CSS3
-* JavaScript (opsional, jika ada script)
+* JavaScript
 * Aset gambar dan font custom
 
 ---
 
 ## 👥 Kontribusi
 
-Silakan lakukan pull request jika ingin berkontribusi dalam perbaikan atau penambahan fitur.
 
 ---
 
 ## 📜 Lisensi
 
-Project ini belum memiliki lisensi resmi. Tambahkan lisensi jika diperlukan nanti.
+Project ini belum memiliki lisensi resmi.

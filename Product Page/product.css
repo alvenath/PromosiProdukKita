@@ -1,0 +1,231 @@
+
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Navbar */
+   header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+    nav a.active { 
+      font-weight: bold;
+      text-decoration: underline; 
+    }
+
+    nav a:hover {
+      text-decoration: underline;  
+    } 
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .search-container {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 4px 10px;
+      background-color: #fff;
+    }
+    .search-container input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      font-size: 14px;
+      width: 160px;
+    }
+    .search-container span {
+      font-size: 16px;
+      color: #333;
+    }
+    .icon-button {
+      font-size: 25px;
+      cursor: pointer;
+      user-select: none;
+      color: #000;
+      transition: 0.3s;
+    }
+    .icon-button:hover {
+      color: #007bff;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #ddd;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .hero h3 {
+      margin-bottom: 10px;
+    }
+
+    /* Filter Section */
+    .filters {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    .filter-buttons button {
+      border: 1px solid #ccc;
+      background: white;
+      padding: 6px 15px;
+      border-radius: 3px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .filter-buttons button:hover {
+      background-color: #bbb;
+    }
+
+    .filter-buttons button.active {
+      background: black;
+      color: white;
+    }
+
+    .sort-container {
+        display: block;
+        width: fit-content;
+    }
+
+    .sort-container > div:first-child {
+        display: absolute; 
+        align-items: center; 
+        padding: 5px;
+        margin-right: 30px;
+        border: 2px solid #5e5e5e; 
+    }
+
+    .sort-container label {
+        font-size: 14px; 
+        color: #333;  
+    }
+
+    .sort-container select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: auto;
+        background-color: transparent; 
+        border: none; 
+        padding: auto;
+        margin: auto;
+        font-size: 14px; 
+        color: #000;
+        font-weight: bold; 
+        cursor: pointer;
+    }
+
+    .product-count {
+      text-align: right;
+      font-size: 14px;
+      margin-top: 10px;
+      color: #555;
+      margin-right: 30px;
+    }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 25px;
+      padding: 20px 40px;
+    }
+
+    .product-card {
+      background-color: transparent;
+      border-radius: 1px;
+      margin-right: 20px;
+      padding: 10px;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .product-image {
+      background-color: #bbb;
+      width: 100%;
+      height: 250px;
+      border-radius: 1px;
+      margin-bottom: 10px;
+      transition: 0.5s ease;
+    }
+
+    .product-image:hover {
+      transform: scale(1.05);
+    }
+
+    .name-size {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .product-name {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .product-size {
+      font-size: 15px;
+      color: #555;
+    }
+    .price {
+      font-size: 16px;
+      margin-top: 7px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ececec;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: #333;
+      font-size: 14px;
+    }
+    footer h4 {
+      margin-bottom: 10px;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    footer a {
+      color: #333;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .copyright {
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #666;
+      border-top: 1px solid #ddd;
+    }

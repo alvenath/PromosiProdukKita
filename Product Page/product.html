@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromosiProdukKita</title>
+  <link rel="stylesheet" href="../Product Page/product.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>PromosiProdukKita</h1>
+    <nav>
+      <a href="../Homepage/index.html">Home</a>
+      <a href="../About Page/about.html">About</a>
+      <a href="../Product Page/product.html" class="active">Products</a>
+      <a href="../Contact Page/contact.html">Contact</a>
+    </nav>
+    <div class="header-right">
+      <div class="search-container">
+        <input type="search" placeholder="Search product..." />
+        <span>🔍</span>
+      </div>
+      <div class="icon-button" title="Wishlist">♡⁠</div>
+      <div class="icon-button" title="Profile">👤</div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h3>PRODUCT</h3>
+    <p>FIND YOUR PERFECT PRODUCT <br> 1000+ Products Available — Grab Yours Now!</p>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters">
+    <div class="filter-buttons">
+      <button class="active" data-filter="all">All</button>
+      <button class="active" data-filter="fashion">Fashion</button>
+      <button class="active" data-filter="personal-care">Personal Care</button>
+      <button class="active" data-filter="electronics">Electronics</button>
+      <button class="active" data-filter="homeware">Homeware</button>
+    </div>
+    <div class="sort-container">
+    <div>
+        <label for="sort">Sort By :</label>
+        <select id="sort">
+            <option value="popular" selected>Popular</option>
+            <option value="newest">Newest</option>
+            <option value="low-to-high">Price: Low to High</option>
+            <option value="high-to-low">Price: High to Low</option>
+        </select>
+    </div>
+    <div class="product-count" id="product-count-display">
+    <p>Showing 0 Products</p>
+</div>
+</div>
+  </div>
+
+  <!-- Products -->
+  <div class="product-grid">
+    <!--Fashions-->
+    <div class="product-card" data-category="fashion" >
+      <div>
+        <img src="../Image Products/Graffiti Shirt.jpg" class="product-image" alt="Product Image">
+      </div>
+      <div class="name-size">
+        <div class="product-name">Men's Winter Jacket</div>
+        <div class="product-size">M</div>
+      </div>
+      <div class="price">$99</div>
+    </div>
+
+    <div class="product-card" data-category="fashion">
+      <div class="product-image"></div>
+        <div class="name-size">
+          <div class="product-name">Men's Winter Jacket</div>
+          <div class="product-size">M</div>
+        </div>
+      <div class="price">$99</div>
+    </div>
+
+    <div class="product-card" data-category="fashion">
+      <div class="product-image"></div>
+        <div class="name-size">
+          <div class="product-name">Men's Winter Jacket</div>
+          <div class="product-size">M</div>
+        </div>
+      <div class="price">$99</div>
+    </div>
+
+    <div class="product-card" data-category="fashion">
+      <div class="product-image"></div>
+        <div class="name-size">
+          <div class="product-name">Men's Winter Jacket</div>
+          <div class="product-size">M</div>
+        </div>
+      <div class="price">$99</div>
+    </div>
+
+    <div class="product-card" data-category="fashion">
+      <div class="product-image"></div>
+        <div class="name-size">
+          <div class="product-name">Men's Winter Jacket</div>
+          <div class="product-size">M</div>
+        </div>
+      <div class="price">$99</div>
+    </div>
+
+    <div class="product-card" data-category="fashion">
+      <div class="product-image"></div>
+        <div class="name-size">
+          <div class="product-name">Men's Winter Jacket</div>
+          <div class="product-size">M</div>
+        </div>
+      <div class="price">$99</div>
+    </div>
+
+    <!--Personal Care-->
+        <div class="product-card" data-category="personal-care">
+      <div class="product-image"></div>
+      <div class="product-name">Men's Winter Jacket</div>
+      <div>M</div>
+      <div class="price">$99</div>
+    </div>
+    <div class="product-card" data-category="personal-care">
+      <div class="product-image"></div>
+      <div class="product-name">Men's Winter Jacket</div>
+      <div>M</div>
+      <div class="price">$99</div>
+    </div>
+    <div class="product-card" data-category="personal-care">
+      <div class="product-image"></div>
+      <div class="product-name">Men's Winter Jacket</div>
+      <div>M</div>
+      <div class="price">$99</div>
+    </div>
+    <div class="product-card" data-category="personal-care">
+      <div class="product-image"></div>
+      <div class="product-name">Men's Winter Jacket</div>
+      <div>M</div>
+      <div class="price">$99</div>
+    </div>
+
+    <div class="product-card" data-category="personal-care">
+      <div class="product-image"></div>
+      <div class="product-name">Men's Winter Jacket</div>
+      <div>M</div>
+      <div class="price">$99</div>
+    </div>
+
+        <!--Electronics-->
+        <div class="product-card" data-category="electronics">
+      <div class="product-image"></div>
+      <div class="product-name">Men's Winter Jacket</div>
+      <div>M</div>
+      <div class="price">$99</div>
+    </div>
+    <div class="product-card" data-category="electronics">
+      <div class="product-image"></div>
+      <div class="product-name">Men's Winter Jacket</div>
+      <div>M</div>
+      <div class="price">$99</div>
+    </div>
+    <div class="product-card" data-category="electronics">
+      <div class="product-image"></div>
+      <div class="product-name">Men's Winter Jacket</div>
+      <div>M</div>
+      <div class="price">$99</div>
+    </div>
+    <div class="product-card" data-category="electronics">
+      <div class="product-image"></div>
+      <div class="product-name">Men's Winter Jacket</div>
+      <div>M</div>
+      <div class="price">$99</div>
+    </div>
+
+    <div class="product-card" data-category="electronics">
+      <div class="product-image"></div>
+      <div class="product-name">Men's Winter Jacket</div>
+      <div>M</div>
+      <div class="price">$99</div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h4>PromosiProdukKita</h4>
+      <p>Website promosi produk digital <br>dan non-digital terpercaya</p>
+    </div>
+    <div>
+      <h4>Product</h4>
+      <p>Produk</p>
+      <p>Produk Digital</p>
+      <p>Produk Unggulan</p>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <p>info@promosiprodukkita.com</p>
+      <p>+62 812-3456-7890</p>
+      <p>📘 🔗 ✖️</p>
+    </div>
+  </footer>
+    <div class="copyright">© 2025 PromosiProdukKita. All rights reserved.</div>
+
+<script src="../Product Page/product.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wishlist - PromosiProdukKita</title>
+  <link rel="stylesheet" href="../Wishlist Page/wishlist.css">
+</head>
+<body>
+  <header>
+    <h1>PromosiProdukKita</h1>
+    <nav>
+      <a href="../Homepage/index.html">Home</a>
+      <a href="../About Page/about.html">About</a>
+      <a href="../Product Page/product.html">Products</a>
+      <a href="../Contact Page/contact.html">Contact</a>
+    </nav>
+  <div class="header-right">
+      <div class="search-container">
+        <input type="search" placeholder="Search product..." />
+        <span>🔍</span>
+      </div>
+      <div class="icon-button" title="Wishlist"><a href="../Wishlist Page/wishlist.html" class="active">♡</a></div>
+      <div class="icon-button" title="Profile">👤</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Sidebar / Filter -->
+    <aside class="sidebar" aria-labelledby="filterHeading">
+      <h2 id="filterHeading" style="font-size:18px;margin:0 0 12px">Filter</h2>
+
+      <details class="filter-section" open>
+        <summary>Stok</summary>
+        <div style="padding-left:6px">
+          <label class="radio-list"><input type="radio" name="stock" value="all" checked> Semua</label>
+          <label class="radio-list"><input type="radio" name="stock" value="preorder"> Preorder</label>
+          <label class="radio-list"><input type="radio" name="stock" value="available"> Tersedia</label>
+          <label class="radio-list"><input type="radio" name="stock" value="unavailable"> Tidak Tersedia</label>
+        </div>
+      </details>
+
+      <details class="filter-section" open>
+        <summary>Kategori</summary>
+        <div style="padding-left:6px">
+          <label class="checkbox"><input type="checkbox" name="cat" value="Elektronik"> Elektronik</label>
+          <label class="checkbox"><input type="checkbox" name="cat" value="Fashion"> Fashion</label>
+          <label class="checkbox"><input type="checkbox" name="cat" value="Dapur"> Dapur</label>
+          <label class="checkbox"><input type="checkbox" name="cat" value="Makanan"> Makanan & Minuman</label>
+          <label class="checkbox"><input type="checkbox" name="cat" value="Olahraga"> Olahraga</label>
+          <label class="checkbox"><input type="checkbox" name="cat" value="Kesehatan"> Kesehatan</label>
+          <label class="checkbox"><input type="checkbox" name="cat" value="Otomotif"> Otomotif</label>
+        </div>
+      </details>
+
+      <details class="filter-section">
+        <summary>Harga</summary>
+        <div style="padding-left:6px;margin-top:8px">
+          <label class="checkbox"><input type="radio" name="price" value="all" checked> Semua</label>
+          <label class="checkbox"><input type="radio" name="price" value="0-50"> 0 - 50</label>
+          <label class="checkbox"><input type="radio" name="price" value="50-150"> 50 - 150</label>
+          <label class="checkbox"><input type="radio" name="price" value="150+"> 150+</label>
+        </div>
+      </details>
+
+      <div style="display:flex;gap:8px;margin-top:12px">
+        <button id="applyBtn" class="btn">Apply</button>
+        <button id="clearBtn" class="btn">Reset</button>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <section>
+      <div class="top-row">
+        <div class="results" id="resultsText">Showing <span id="count">9</span> Products</div>
+        <div class="sort">
+          <label for="sortSelect" class="muted">Sort By</label>
+          <select id="sortSelect" aria-label="Sort products">
+            <option value="new">Baru Disimpan</option>
+            <option value="price-asc">Harga: Rendah - Tinggi</option>
+            <option value="price-desc">Harga: Tinggi - Rendah</option>
+            <option value="name">Nama (A-Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid" id="productGrid">
+        <!-- 9 product cards: include data attributes for filtering/sorting -->
+        <!-- We'll create them in HTML for clarity; in a real app they'd be rendered dynamically -->
+
+        <article class="card" data-category="Fashion" data-stock="available" data-price="99" data-name="Men's Winter Jacket">
+          <div class="thumb" role="img" aria-label="Men's Winter Jacket image"></div>
+          <div class="prod-meta">
+            <div>
+              <div class="prod-title">Men's Winter Jacket</div>
+              <div class="prod-price">$99</div>
+            </div>
+            <div class="muted">M</div>
+          </div>
+        </article>
+
+        <article class="card" data-category="Fashion" data-stock="available" data-price="79" data-name="Men's Raincoat">
+          <div class="thumb" role="img" aria-label="Men's Raincoat image"></div>
+          <div class="prod-meta">
+            <div>
+              <div class="prod-title">Men's Raincoat</div>
+              <div class="prod-price">$79</div>
+            </div>
+            <div class="muted">L</div>
+          </div>
+        </article>
+
+        <article class="card" data-category="Elektronik" data-stock="preorder" data-price="199" data-name="Wireless Headphones">
+          <div class="thumb" role="img" aria-label="Wireless Headphones image"></div>
+          <div class="prod-meta">
+            <div>
+              <div class="prod-title">Wireless Headphones</div>
+              <div class="prod-price">$199</div>
+            </div>
+            <div class="muted">-</div>
+          </div>
+        </article>
+
+        <article class="card" data-category="Dapur" data-stock="available" data-price="29" data-name="Kitchen Knife Set">
+          <div class="thumb" role="img" aria-label="Kitchen Knife Set image"></div>
+          <div class="prod-meta">
+            <div>
+              <div class="prod-title">Kitchen Knife Set</div>
+              <div class="prod-price">$29</div>
+            </div>
+            <div class="muted">-</div>
+          </div>
+        </article>
+
+        <article class="card" data-category="Makanan" data-stock="available" data-price="9" data-name="Gourmet Coffee Pack">
+          <div class="thumb" role="img" aria-label="Gourmet Coffee Pack image"></div>
+          <div class="prod-meta">
+            <div>
+              <div class="prod-title">Gourmet Coffee Pack</div>
+              <div class="prod-price">$9</div>
+            </div>
+            <div class="muted">-</div>
+          </div>
+        </article>
+
+        <article class="card" data-category="Olahraga" data-stock="unavailable" data-price="49" data-name="Yoga Mat">
+          <div class="thumb" role="img" aria-label="Yoga Mat image"></div>
+          <div class="prod-meta">
+            <div>
+              <div class="prod-title">Yoga Mat</div>
+              <div class="prod-price">$49</div>
+            </div>
+            <div class="muted">-</div>
+          </div>
+        </article>
+
+        <article class="card" data-category="Kesehatan" data-stock="available" data-price="15" data-name="Vitamin Supplement">
+          <div class="thumb" role="img" aria-label="Vitamin Supplement image"></div>
+          <div class="prod-meta">
+            <div>
+              <div class="prod-title">Vitamin Supplement</div>
+              <div class="prod-price">$15</div>
+            </div>
+            <div class="muted">-</div>
+          </div>
+        </article>
+
+        <article class="card" data-category="Otomotif" data-stock="available" data-price="120" data-name="Car Vacuum">
+          <div class="thumb" role="img" aria-label="Car Vacuum image"></div>
+          <div class="prod-meta">
+            <div>
+              <div class="prod-title">Car Vacuum</div>
+              <div class="prod-price">$120</div>
+            </div>
+            <div class="muted">-</div>
+          </div>
+        </article>
+
+        <article class="card" data-category="Fashion" data-stock="available" data-price="55" data-name="Casual T-Shirt">
+          <div class="thumb" role="img" aria-label="Casual T-Shirt image"></div>
+          <div class="prod-meta">
+            <div>
+              <div class="prod-title">Casual T-Shirt</div>
+              <div class="prod-price">$55</div>
+            </div>
+            <div class="muted">M</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h4>PromosiProdukKita</h4>
+      <p>Website promosi produk digital <br>dan non-digital terpercaya</p>
+    </div>
+    <div>
+      <h4>Wishlist</h4>
+      <p>Home</p>
+      <p>About</p>
+      <p>Products</p>
+      <p>Contact</p>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <p>info@promosiprodukkita.com</p>
+      <p>+62 812-3456-7890</p>
+      <p>📘 🔗 ✖️</p>
+    </div>
+  </footer>
+  <div class="copyright">© 2025 PromosiProdukKita. All rights reserved.</div>
+
+  <script src="../Wishlist Page/wishlist.js"></script>
+</body>
+</html>

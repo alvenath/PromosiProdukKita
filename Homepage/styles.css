@@ -104,6 +104,31 @@
   font-weight: 600;
 }
 
+
+.typing {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 24px;
+
+  animation: typing 6s steps(30) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
 .hero-content p {
   margin-bottom: 20px;
   font-size: 16px;
@@ -122,7 +147,7 @@
 }
 
 .hero-content button:hover {
-  background-color: #e3e3e3;
+  background-color: rgb(9, 161, 34);
 }
 
     /* Carousel sections */

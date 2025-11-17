@@ -275,6 +275,7 @@ header {
   background: #000;
   color: #fff;
   border: none;
+  border-radius: 5px;
   padding: 1rem 1rem;
   font-weight: 600;
   font-size: 12px;
@@ -282,9 +283,10 @@ header {
 }
 
 .product-info .buy {
-  background: #1d4ed8;
+  background: rgb(0, 199, 0);
   color: #fff;
   border: none;
+  border-radius: 5px;
   padding: 0.45rem 0.9rem;
   font-weight: 600;
   font-size: 12px;

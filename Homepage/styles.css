@@ -204,6 +204,11 @@
       transform: scale(1.05);
     }
 
+    .product-card a{
+      color: #000;
+      text-decoration: none;
+    }
+
     .product-name {
       font-weight: 600;
       margin-top: 10px;

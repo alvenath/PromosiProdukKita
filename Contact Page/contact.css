@@ -265,8 +265,8 @@ header {
 }
 
 .product-info .buttons {
+  margin-top: -25px;
   margin-left: 2.7rem;
-  margin-top: 1.2rem;
   display: flex;
   gap: 1rem;
 }

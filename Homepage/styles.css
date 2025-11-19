@@ -22,19 +22,36 @@
       font-weight: 600;
     }
     nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: black;
-      font-weight: 500;
-    }
-    nav a.active { 
-      font-weight: bold; 
-      text-decoration: underline;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding-bottom: 1px; /* space for underline */
     }
 
-    nav a:hover {
-      text-decoration: underline;  
-    } 
+    /* underline animation */
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: black;
+      transform: translateX(-50%);
+      transition: width 0.3s ease;
+    }
+
+    /* hover expand */
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* active link: stays fully underlined */
+    nav a.active::after {
+      width: 100%;
+    }
     .header-right {
       display: flex;
       align-items: center;
@@ -134,11 +151,6 @@
   }
 }
 
-.hero-content p {
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-
 .hero-content button {
   margin-top: 20px;
   padding: 12px 28px;
@@ -149,6 +161,17 @@
   cursor: pointer;
   border-radius: 4px;
   transition: 0.3s;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUp 0.6s ease-out forwards;
+  animation-delay: 2.2s;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero-content button:hover {
@@ -245,6 +268,7 @@
     .cta {
       height: 300px;
       background-color: #ccc;
+      background-image: url("../Banner/banner.jpeg");
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -252,8 +276,9 @@
       text-align: center;
     }
     .cta h2 {
+      color: white;
       font-size: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
     .cta button {
       padding: 10px 20px;
@@ -262,6 +287,11 @@
       border: none;
       border-radius: 6px;
       cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta button:hover{
+      background-color: #666;
     }
 
     /* Footer */

@@ -1,0 +1,341 @@
+/* ========== BAGIAN HEADER (DI-COPY DARI STYLES.CSS) ========== */
+/* Ini untuk menjaga konsistensi dengan halaman lain */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+nav a.active { 
+  font-weight: bold; 
+  text-decoration: underline;
+}
+nav a:hover {
+  text-decoration: underline;  
+} 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px 10px;
+  background-color: #fff;
+}
+.search-container input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+  width: 160px;
+}
+.search-container span {
+  font-size: 16px;
+  color: #333;
+}
+.icon-button {
+  font-size: 25px;
+  cursor: pointer;
+  user-select: none;
+  color: #000;
+  transition: 0.3s;
+}
+.icon-button:hover {
+  color: #007bff;
+}
+
+/* ========== BAGIAN BARU (PRODUCT DETAIL CSS) ========== */
+/* Ini adalah CSS baru khusus untuk halaman ini */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* --- Bagian Detail Produk --- */
+.product-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.product-gallery {
+  width: 100%;
+  height: 450px;
+  background-color: #f0f0f0; /* Placeholder */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Placeholder untuk gambar produk */
+#product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.gallery-arrow.right { right: 15px; }
+
+.product-info h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.product-info .price {
+  font-size: 24px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.product-info .description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.product-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.product-buttons .btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-buttons .btn-wishlist {
+  background-color: #333;
+  color: white;
+}
+.product-buttons .btn-wishlist:hover { background-color: #000; }
+
+.product-buttons .btn-buy {
+  background-color: #007bff; /* Biru seperti di gambar */
+  color: white;
+}
+.product-buttons .btn-buy:hover { background-color: #0056b3; }
+
+
+/* --- Bagian Review Produk --- */
+.product-reviews {
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.product-reviews h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.review-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.review-summary .stars { font-size: 20px; color: #FFC107; }
+.review-summary .summary-text { font-size: 16px; color: #444; }
+
+.review-list {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.review-item {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  gap: 15px;
+}
+.review-item:last-child { border-bottom: none; }
+
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd; /* Placeholder avatar */
+  flex-shrink: 0;
+}
+
+.review-content .reviewer-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+.review-content .review-stars {
+  font-size: 14px;
+  color: #FFC107;
+  margin-top: 4px;
+}
+.review-content .review-text {
+  font-size: 15px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Gambar review opsional */
+.review-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.review-images .review-img {
+    width: 70px;
+    height: 70px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+/* --- Pagination --- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.pagination a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.pagination a.active,
+.pagination a:hover {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+/* --- MARKETPLACE RATING SECTION --- */
+.marketplace-section {
+  border-top: 1px solid #eee;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+
+.marketplace-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.marketplace-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.marketplace-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Warna Khas Platform */
+.marketplace-card.shopee { border-top: 4px solid #ee4d2d; }
+.marketplace-card.tokopedia { border-top: 4px solid #42b549; }
+.marketplace-card.tiktok { border-top: 4px solid #000000; }
+
+.mp-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+.mp-star { color: #FFC107; font-size: 1.2rem; }
+
+.mp-rating .score {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.mp-rating .scale {
+  font-size: 1rem;
+  color: #999;
+}
+
+.mp-sold {
+  margin: 10px 0 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.mp-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  width: 80%;
+}
+
+.shopee .mp-btn { background-color: #ee4d2d; color: white; }
+.tokopedia .mp-btn { background-color: #42b549; color: white; }
+.tiktok .mp-btn { background-color: #000000; color: white; }

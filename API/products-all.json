@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": 123,
+      "name": "Men's winter jacket",
+      "price": 1250000,
+      "imageUrl": "../Image Products/black shirt.png",
+      "category": "fashion"
+    },
+    {
+      "id": 124,
+      "name": "Men Short Sleeved Y2k T-Shirt",
+      "price": 150000,
+      "imageUrl": "../Image Products/Men Short Sleeved Y2k T-Shirt.jpg",
+      "category": "fashion"
+    },
+    {
+      "id": 125,
+      "name": "Graffiti Shirt (Games On!)",
+      "price": 175000,
+      "imageUrl": "../Image Products/Graffiti Shirt.jpg",
+      "category": "fashion"
+    },
+    {
+      "id": 126,
+      "name": "Elegance Summer",
+      "price": 150000,
+      "imageUrl": "../Image Products/Casual Summer.jpg",
+      "category": "fashion"
+    },
+    {
+      "id": 127,
+      "name": "Cartoon Star",
+      "price": 150000,
+      "imageUrl": "../Image Products/Cartoon Star.jpg",
+      "category": "fashion"
+    },
+    {
+      "id": 128,
+      "name": "Produk Elektronik (Contoh)",
+      "price": 5000000,
+      "imageUrl": "",
+      "category": "electronics"
+    },
+    {
+      "id": 129,
+      "name": "Produk Perawatan (Contoh)",
+      "price": 80000,
+      "imageUrl": "",
+      "category": "personal-care"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - PromosiProdukKita</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../LoginPage/login.css">
+</head>
+<body>
+
+  <header>
+    <h1>PromosiProdukKita</h1>
+    <nav>
+      <a href="../Homepage/index.html">Home</a>
+      <a href="../About Page/about.html">About</a>
+      <a href="../Product Page/product.html">Products</a>
+      <a href="../Contact Page/contact.html">Contact</a>
+    </nav>
+    <div class="header-right">
+      <div class="search-container">
+        <input type="search" placeholder="Search product..." />
+        <span>🔍</span>
+      </div>
+      <div class="icon-button" title="Wishlist">♡⁠</div>
+      <div class="icon-button" title="Profile">👤</div>
+    </div>
+  </header>
+
+  <main class="login-container">
+    <div class="login-box">
+      <h2>Create Account</h2>
+      <p>Register with your email</p>
+      
+      <form id="register-form">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="input-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        
+        <button type="submit" class="login-button">Register</button>
+        
+        <p id="register-message" class="error-message"></p>
+      </form>
+      
+      <div class="create-account-link">
+         <a href="../LoginPage/login.html" style="text-decoration: none; color: #555;">
+            <p>Already have an account? Login here</p>
+         </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="login-footer">
+    <div class="copyright">© 2025 PromosiProdukKita. All rights reserved.</div>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+  <script src="../scripts/firebase-init.js"></script>
+  <script src="register.js"></script>
+
+</body>
+</html>

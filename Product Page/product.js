@@ -1,34 +1,128 @@
+document.addEventListener('DOMContentLoaded', () => {
+    let allProducts = []; // Wadah untuk menyimpan semua data produk
 
-  const filterButtons = document.querySelectorAll('.filter-buttons button');
-  const products = document.querySelectorAll('.product-card');
-   const countDisplay = document.getElementById('product-count-display');
+    // 1. Ambil elemen-elemen penting dari HTML
+    const productGrid = document.getElementById('product-grid-container');
+    const countDisplay = document.getElementById('product-count-display');
+    const filterButtons = document.querySelectorAll('.filter-buttons button');
+    const sortSelect = document.getElementById('sort');
+    const searchInput = document.querySelector('.search-container input'); // Search bar di header
 
-function updateCount() {
-    const visibleProducts = [...products].filter(p => p.style.display !== 'none');
-    countDisplay.textContent = "Showing " + visibleProducts.length + " Products";
-  }
-
-    updateCount();
-
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-
-      // highlight active button
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-
-      const filter = button.getAttribute('data-filter');
-
-      products.forEach(product => {
-        const category = product.getAttribute('data-category');
-
-        if (filter === 'all' || filter === category) {
-          product.style.display = 'block';
-        } else {
-          product.style.display = 'none';
+    // 2. Fungsi Utama: Ambil Data dari API
+    async function fetchProducts() {
+        try {
+            const response = await fetch('../api/products-all.json');
+            if (!response.ok) throw new Error('Gagal memuat data');
+            
+            const data = await response.json();
+            allProducts = data.products; // Simpan data ke variabel global
+            
+            // Tampilkan semua produk pertama kali
+            renderProducts(allProducts);
+        } catch (error) {
+            console.error('Error:', error);
+            productGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center;">Gagal memuat produk.</p>';
         }
-      });
-        updateCount();
-    });
-  });
+    }
 
+    // 3. Fungsi Penampil (Render)
+    function renderProducts(products) {
+        productGrid.innerHTML = ''; // Bersihkan grid sebelum diisi ulang
+        
+        // Update teks jumlah produk
+        if (countDisplay) {
+            countDisplay.textContent = `Showing ${products.length} Products`;
+        }
+
+        if (products.length === 0) {
+            productGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center;">Tidak ada produk yang ditemukan.</p>';
+            return;
+        }
+
+        // Loop dan buat kartu produk
+        products.forEach(product => {
+            const card = document.createElement('div');
+            card.className = 'product-card';
+            // Link ke detail produk
+            const link = `product-detail.html?id=${product.id}`;
+
+            card.innerHTML = `
+                <a href="${link}" style="text-decoration: none; color: inherit;">
+                    <div style="overflow: hidden; border-radius: 4px;">
+                        <img src="${product.imageUrl}" class="product-image" alt="${product.name}">
+                    </div>
+                    <div class="name-size">
+                        <div class="product-name">${product.name}</div>
+                    </div>
+                    <div class="price">Rp ${product.price.toLocaleString('id-ID')}</div>
+                </a>
+            `;
+            productGrid.appendChild(card);
+        });
+    }
+
+    // 4. Logika Filter, Sort, dan Search
+    function applyFilters() {
+        let filtered = [...allProducts]; // Salin data asli agar tidak rusak
+
+        // A. Filter Kategori
+        const activeBtn = document.querySelector('.filter-buttons button.active');
+        const category = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
+        
+        if (category !== 'all') {
+            filtered = filtered.filter(p => p.category === category);
+        }
+
+        // B. Filter Search (Pencarian)
+        const keyword = searchInput.value.toLowerCase();
+        if (keyword) {
+            filtered = filtered.filter(p => 
+                p.name.toLowerCase().includes(keyword)
+            );
+        }
+
+        // C. Sorting (Pengurutan)
+        const sortValue = sortSelect.value;
+        if (sortValue === 'low-to-high') {
+            filtered.sort((a, b) => a.price - b.price);
+        } else if (sortValue === 'high-to-low') {
+            filtered.sort((a, b) => b.price - a.price);
+        } else if (sortValue === 'newest') {
+            // Asumsi: ID lebih besar = produk lebih baru
+            filtered.sort((a, b) => b.id - a.id);
+        }
+        // 'popular' kita biarkan default urutannya
+
+        // Tampilkan hasil akhir
+        renderProducts(filtered);
+    }
+
+    // 5. Event Listeners (Pemicu)
+    
+    // Tombol Kategori
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Hapus kelas active dari semua tombol
+            filterButtons.forEach(b => b.classList.remove('active'));
+            // Tambahkan ke tombol yang diklik
+            btn.classList.add('active');
+            // Terapkan filter
+            applyFilters();
+        });
+    });
+
+    // Dropdown Sort
+    sortSelect.addEventListener('change', () => {
+        applyFilters();
+    });
+
+    // Search Bar (Input)
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            applyFilters();
+        });
+    }
+
+    // Jalankan fungsi fetch saat halaman dibuka
+    fetchProducts();
+});

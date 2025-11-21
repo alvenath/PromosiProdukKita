@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+<<<<<<< HEAD
     // 3. Fungsi Penampil (Render)
     function renderProducts(products) {
         productGrid.innerHTML = ''; // Bersihkan grid sebelum diisi ulang
@@ -126,3 +127,69 @@ document.addEventListener('DOMContentLoaded', () => {
     // Jalankan fungsi fetch saat halaman dibuka
     fetchProducts();
 });
+=======
+document.addEventListener("DOMContentLoaded", () => {
+  const hero = document.querySelector(".hero");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        hero.classList.add("show");
+        observer.unobserve(hero);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(hero);
+});
+
+  // Observe scroll animation
+  const cards = document.querySelectorAll('.product-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  cards.forEach(card => observer.observe(card));
+
+
+  // ✨ Re-animate with stagger when changing filter
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+
+      setTimeout(() => {
+        let delay = 0;
+
+        products.forEach(product => {
+
+          // Show only visible items
+          if (product.style.display !== 'none') {
+            
+            // Reset instantly
+            product.classList.add('reset');
+
+            // Apply stagger delay per card
+            setTimeout(() => {
+              product.classList.remove('reset');
+              product.classList.add('show');
+            }, delay);
+
+            delay += 80; // delay between each card (80ms)
+          }
+        });
+
+      }, 10);
+
+    });
+  });
+
+
+
+
+
+
+>>>>>>> 96a3c668df9cc80f5c6d5531f1715db6d821e64d

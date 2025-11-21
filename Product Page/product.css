@@ -1,6 +1,4 @@
-
-
-    body {
+       body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #fff;
@@ -23,20 +21,39 @@
       font-size: 20px;
       font-weight: 600;
     }
+
     nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: black;
-      font-weight: 500;
-    }
-    nav a.active { 
-      font-weight: bold;
-      text-decoration: underline; 
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding-bottom: 1px; /* space for underline */
     }
 
-    nav a:hover {
-      text-decoration: underline;  
-    } 
+    /* underline animation */
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: black;
+      transform: translateX(-50%);
+      transition: width 0.3s ease;
+    }
+
+    /* hover expand */
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* active link: stays fully underlined */
+    nav a.active::after {
+      width: 100%;
+    }
+
     .header-right {
       display: flex;
       align-items: center;
@@ -74,20 +91,47 @@
 
     .icon-button a{
     color: #000;
-    text-decoration: underline;
+    text-decoration: none;
     }
 
 
     /* Hero Section */
-    .hero {
-      background-color: #ddd;
-      padding: 40px;
-      text-align: center;
-    }
+   .hero {
+  height: 150px;
+  background-color: #ddd;
+  padding: 40px;
+  background-image: url("../Banner/banner.jpeg");
+  text-align: center;
+}
 
-    .hero h3 {
-      margin-bottom: 10px;
-    }
+/* ANIMATION START STATES */
+.hero h3 {
+  color: white;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateX(-40px); /* slide from left */
+  transition: all 0.7s ease-out;
+}
+
+.hero p {
+  color: white;
+  opacity: 0;
+  transform: translateX(40px); /* slide from right */
+  transition: all 0.7s ease-out;
+}
+
+/* WHEN ACTIVE */
+.hero.show h3 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero.show p {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.2s; /* nice stagger */
+}
+
 
     /* Filter Section */
     .filters {
@@ -170,6 +214,20 @@
       padding: 10px;
       text-align: left;
       cursor: pointer;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .product-card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .product-card.reset {
+      opacity: 0 !important;
+      transform: translateY(40px) !important;
+      transition: none !important;
     }
 
     .product-image {

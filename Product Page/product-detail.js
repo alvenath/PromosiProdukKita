@@ -28,6 +28,12 @@ async function fetchProductDetails(productId) {
     document.getElementById('product-price').textContent = `Rp ${product.price.toLocaleString('id-ID')}`;
     document.getElementById('product-description').textContent = product.description;
     
+    const specElement = document.getElementById('product-spec');
+     if (specElement) {
+        // Jika ada data spec di JSON, tampilkan. Jika tidak, strip.
+        specElement.textContent = product.spec || "-"; 
+    }
+
     const productImage = document.getElementById('product-image');
     productImage.src = product.imageUrl; 
     productImage.alt = product.name;

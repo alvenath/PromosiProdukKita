@@ -1,53 +1,74 @@
 {
   "products": [
     {
-      "id": 123,
-      "name": "Men's winter jacket",
-      "price": 1250000,
-      "imageUrl": "../Image Products/black shirt.png",
+      "id": "fashion-1",
+      "name": "Nike Air Force 1 '07",
+      "price": 1450000,
+      "imageUrl": "../Image Products/Fashion/1_1.jpg",
       "category": "fashion"
     },
     {
-      "id": 124,
-      "name": "Men Short Sleeved Y2k T-Shirt",
-      "price": 150000,
-      "imageUrl": "../Image Products/Men Short Sleeved Y2k T-Shirt.jpg",
+      "id": "fashion-2",
+      "name": "Uniqlo Oversized T-Shirt",
+      "price": 149000,
+      "imageUrl": "../Image Products/Fashion/1_2.jpg",
       "category": "fashion"
     },
     {
-      "id": 125,
-      "name": "Graffiti Shirt (Games On!)",
-      "price": 175000,
-      "imageUrl": "../Image Products/Graffiti Shirt.jpg",
+      "id": "fashion-3",
+      "name": "Levi's 501 Original Fit Jeans",
+      "price": 1199000,
+      "imageUrl": "../Image Products/Fashion/1_3.jpg",
       "category": "fashion"
     },
     {
-      "id": 126,
-      "name": "Elegance Summer",
-      "price": 150000,
-      "imageUrl": "../Image Products/Casual Summer.jpg",
+      "id": "fashion-4",
+      "name": "Adidas SST Track Jacket",
+      "price": 1100000,
+      "imageUrl": "../Image Products/Fashion/1_4.jpg",
       "category": "fashion"
     },
     {
-      "id": 127,
-      "name": "Cartoon Star",
-      "price": 150000,
-      "imageUrl": "../Image Products/Cartoon Star.jpg",
+      "id": "fashion-5",
+      "name": "H&M Hoodie Men Basic",
+      "price": 299000,
+      "imageUrl": "../Image Products/Fashion/1_5.jpg",
       "category": "fashion"
     },
     {
-      "id": 128,
-      "name": "Produk Elektronik (Contoh)",
-      "price": 5000000,
-      "imageUrl": "",
-      "category": "electronics"
+      "id": "fashion-6",
+      "name": "Converse Chuck Taylor High",
+      "price": 899000,
+      "imageUrl": "../Image Products/Fashion/1_6.jpg",
+      "category": "fashion"
     },
     {
-      "id": 129,
-      "name": "Produk Perawatan (Contoh)",
-      "price": 80000,
-      "imageUrl": "",
-      "category": "personal-care"
+      "id": "fashion-7",
+      "name": "UESS Shoulder Bag Women",
+      "price": 1300000,
+      "imageUrl": "../Image Products/Fashion/1_7.jpg",
+      "category": "fashion"
+    },
+    {
+      "id": "fashion-8",
+      "name": "Erigo Flannel Shirt",
+      "price": 199000,
+      "imageUrl": "../Image Products/Fashion/1_8.jpg",
+      "category": "fashion"
+    },
+    {
+      "id": "ggashion-9",
+      "name": "Vans Old Skool Black White",
+      "price": 999000,
+      "imageUrl": "../Image Products/Fashion/1_9.jpg",
+      "category": "fashion"
+    },
+    {
+      "id": "fashion-10",
+      "name": "Zara Slim Fit Chinos",
+      "price": 549000,
+      "imageUrl": "../Image Products/Fashion/1_10.jpg",
+      "category": "fashion"
     }
   ]
 }

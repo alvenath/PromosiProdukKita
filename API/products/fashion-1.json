@@ -1,0 +1,26 @@
+{
+  "id": 1,
+  "name": "Nike Air Force 1 '07",
+  "price": 1450000,
+  "description": "Sneakers klasik dengan desain timeless, nyaman dipakai harian.",
+  "spec": "Upper leather, midsole Air cushioning, outsole rubber.",
+  "imageUrl": "../Image Products/Fashion/1_1.jpg",
+  "category": "fashion",
+  "marketplaces": {
+    "shopee": {
+      "rating": 0,
+      "sold": 0,
+      "url": "https://id.shp.ee/Bx93yHg"
+    },
+    "tokopedia": {
+      "rating": 0,
+      "sold": 0,
+      "url": "https://tk.tokopedia.com/ZSfN7wuNm/"
+    },
+    "tiktok": {
+      "rating": 0,
+      "sold": 0,
+      "url": "https://vt.tokopedia.com/t/ZSH3b3eos7oPE-aWcB1/"
+    }
+  }
+}

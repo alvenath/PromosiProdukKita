@@ -1,0 +1,26 @@
+{
+  "id": 2,
+  "name": "Uniqlo Oversized T-Shirt",
+  "price": 149000,
+  "description": "Kaos oversized berbahan katun lembut, cocok untuk gaya kasual.",
+  "spec": "100% Cotton, cutting long fit, breathable.",
+  "imageUrl": "../Image Products/Fashion/1_2.jpg",
+  "category": "fashion",
+  "marketplaces": {
+    "shopee": {
+      "rating": 5.0,
+      "sold": 500,
+      "url": "#"
+    },
+    "tokopedia": {
+      "rating": 4.8,
+      "sold": 230,
+      "url": "#"
+    },
+    "tiktok": {
+      "rating": 4.8,
+      "sold": 100,
+      "url": "#"
+    }
+  }
+}

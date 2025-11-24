@@ -1,0 +1,14 @@
+{
+  "id": "homeware-9",
+  "name": "Tefal Natura Wok Pan 28cm",
+  "price": 399000,
+  "description": "Wajan penggorengan premium dengan teknologi Thermo-Signal untuk suhu memasak yang pas.",
+  "spec": "Diameter 28cm, Mineralia Non-stick Coating, Bebas PFOA.",
+  "imageUrl": "../Image Products/Homeware/9.jpg",
+  "category": "homeware",
+  "marketplaces": {
+    "shopee": { "rating": 5.0, "sold": 3000, "url": "#" },
+    "tokopedia": { "rating": 5.0, "sold": 2000, "url": "#" },
+    "tiktok": { "rating": 4.9, "sold": 1000, "url": "#" }
+  }
+}

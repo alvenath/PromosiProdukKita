@@ -1,0 +1,14 @@
+{
+  "id": "fashion-3",
+  "name": "Levi's 501 Original Fit Jeans",
+  "price": 1199000,
+  "description": "Celana jeans klasik dengan kualitas kokoh dan fit legendaris.",
+  "spec": "Denim cotton, straight fit, button fly.",
+  "imageUrl": "../Image Products/Fashion/1_3.jpg",
+  "category": "fashion",
+  "marketplaces": {
+    "shopee": { "rating": 0, "sold": 0, "url": "#" },
+    "tokopedia": { "rating": 0, "sold": 0, "url": "#" },
+    "tiktok": { "rating": 0, "sold": 0, "url": "#" }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "homeware-1",
+  "name": "GM Bear Panci Set Wajan Teflon 3 in 1",
+  "price": 85000,
+  "description": "Set panci dan wajan anti lengket yang praktis untuk kebutuhan masak sehari-hari.",
+  "spec": "1 Wajan 26cm, 1 Panci Susu 18cm, 1 Panci Sup 22cm.",
+  "imageUrl": "../Image Products/Homeware/1.jpg",
+  "category": "homeware",
+  "marketplaces": {
+    "shopee": { "rating": 4.8, "sold": 100000, "url": "#" },
+    "tokopedia": { "rating": 4.8, "sold": 50000, "url": "#" },
+    "tiktok": { "rating": 4.7, "sold": 80000, "url": "#" }
+  }
+}

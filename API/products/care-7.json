@@ -1,0 +1,14 @@
+{
+  "id": "care-7",
+  "name": "Makarizo Hair Energy Fibertherapy Cream",
+  "price": 65000,
+  "description": "Creambath rumahan untuk rambut lembut, wangi, dan bebas lepek.",
+  "spec": "500g, Aloe & Melon, Keratin Amino Acids.",
+  "imageUrl": "../Image Products/Personal Care/7.jpg",
+  "category": "personal-care",
+  "marketplaces": {
+    "shopee": { "rating": 4.9, "sold": 35000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 20000, "url": "#" },
+    "tiktok": { "rating": 4.8, "sold": 40000, "url": "#" }
+  }
+}

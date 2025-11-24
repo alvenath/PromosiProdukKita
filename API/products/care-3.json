@@ -1,0 +1,14 @@
+{
+  "id": "care-3",
+  "name": "Azarine Hydrasoothe Sunscreen Gel SPF45 PA++++",
+  "price": 65000,
+  "description": "Sunscreen tekstur gel yang ringan, dingin, dan mudah meresap tanpa whitecast.",
+  "spec": "50ml, 0% Alcohol, Oil Free, Silicone Free.",
+  "imageUrl": "../Image Products/Personal Care/3.jpg",
+  "category": "personal-care",
+  "marketplaces": {
+    "shopee": { "rating": 4.9, "sold": 50000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 20000, "url": "#" },
+    "tiktok": { "rating": 4.9, "sold": 60000, "url": "#" }
+  }
+}

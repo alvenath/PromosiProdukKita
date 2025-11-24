@@ -57,7 +57,7 @@
       "category": "fashion"
     },
     {
-      "id": "ggashion-9",
+      "id": "fashion-9",
       "name": "Vans Old Skool Black White",
       "price": 999000,
       "imageUrl": "../Image Products/Fashion/1_9.jpg",
@@ -69,6 +69,216 @@
       "price": 549000,
       "imageUrl": "../Image Products/Fashion/1_10.jpg",
       "category": "fashion"
+    },
+    {
+      "id": "care-1",
+      "name": "Skintific 5X Ceramide Moisturizer",
+      "price": 139000,
+      "imageUrl": "../Image Products/Personal Care/1.jpg",
+      "category": "personal-care"
+    },
+    {
+      "id": "care-2",
+      "name": "Scarlett Whitening Body Lotion",
+      "price": 75000,
+      "imageUrl": "../Image Products/Personal Care/2.jpg",
+      "category": "personal-care"
+    },
+    {
+      "id": "care-3",
+      "name": "Azarine Hydrasoothe Sunscreen",
+      "price": 65000,
+      "imageUrl": "../Image Products/Personal Care/3.jpg",
+      "category": "personal-care"
+    },
+    {
+      "id": "care-4",
+      "name": "Kahf Face Wash",
+      "price": 38000,
+      "imageUrl": "../Image Products/Personal Care/4.jpg",
+      "category": "personal-care"
+    },
+    {
+      "id": "care-5",
+      "name": "Avoskin Miraculous Toner",
+      "price": 169000,
+      "imageUrl": "../Image Products/Personal Care/5.jpg",
+      "category": "personal-care"
+    },
+    {
+      "id": "care-6",
+      "name": "Somethinc Niacinamide Serum",
+      "price": 115000,
+      "imageUrl": "../Image Products/Personal Care/6.jpg",
+      "category": "personal-care"
+    },
+    {
+      "id": "care-7",
+      "name": "Makarizo Hair Energy",
+      "price": 65000,
+      "imageUrl": "../Image Products/Personal Care/7.jpg",
+      "category": "personal-care"
+    },
+    {
+      "id": "care-8",
+      "name": "Grace and Glow Body Wash",
+      "price": 54000,
+      "imageUrl": "../Image Products/Personal Care/8.jpg",
+      "category": "personal-care"
+    },
+    {
+      "id": "care-9",
+      "name": "The Originote Moisturizer",
+      "price": 42000,
+      "imageUrl": "../Image Products/Personal Care/9.jpg",
+      "category": "personal-care"
+    },
+    {
+      "id": "care-10",
+      "name": "Vaseline Repairing Jelly",
+      "price": 32000,
+      "imageUrl": "../Image Products/Personal Care/10.jpg",
+      "category": "personal-care"
+    },
+    {
+      "id": "electronics-1",
+      "name": "Baseus Bowie E16 TWS",
+      "price": 189000,
+      "imageUrl": "../Image Products/Electronics/1.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": "electronics-2",
+      "name": "Xiaomi Redmi Powerbank",
+      "price": 125000,
+      "imageUrl": "../Image Products/Electronics/2.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": "electronics-3",
+      "name": "Logitech M331 Silent Mouse",
+      "price": 205000,
+      "imageUrl": "../Image Products/Electronics/3.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": "electronics-4",
+      "name": "JBL Go 3 Speaker",
+      "price": 599000,
+      "imageUrl": "../Image Products/Electronics/4.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": "electronics-5",
+      "name": "Huawei Band 8",
+      "price": 499000,
+      "imageUrl": "../Image Products/Electronics/5.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": "electronics-6",
+      "name": "Sony WH-1000XM5",
+      "price": 4999000,
+      "imageUrl": "../Image Products/Electronics/6.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": "electronics-7",
+      "name": "Rexus Daiva D68 Keyboard",
+      "price": 450000,
+      "imageUrl": "../Image Products/Electronics/7.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": "electronics-8",
+      "name": "Samsung Galaxy A55 5G",
+      "price": 5999000,
+      "imageUrl": "../Image Products/Electronics/8.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": "electronics-9",
+      "name": "Anker PowerPort 20W",
+      "price": 150000,
+      "imageUrl": "../Image Products/Electronics/9.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": "electronics-10",
+      "name": "SanDisk Dual Drive 64GB",
+      "price": 110000,
+      "imageUrl": "../Image Products/Electronics/10.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": "homeware-1",
+      "name": "GM Bear Panci Set",
+      "price": 85000,
+      "imageUrl": "../Image Products/Homeware/1.jpg",
+      "category": "homeware"
+    },
+    {
+      "id": "homeware-2",
+      "name": "Kintakun Sprei King",
+      "price": 95000,
+      "imageUrl": "../Image Products/Homeware/2.jpg",
+      "category": "homeware"
+    },
+    {
+      "id": "homeware-3",
+      "name": "Bolde Super Mop",
+      "price": 179000,
+      "imageUrl": "../Image Products/Homeware/3.jpg",
+      "category": "homeware"
+    },
+    {
+      "id": "homeware-4",
+      "name": "LocknLock Food Container",
+      "price": 250000,
+      "imageUrl": "../Image Products/Homeware/4.jpg",
+      "category": "homeware"
+    },
+    {
+      "id": "homeware-5",
+      "name": "Rak Troli 3 Susun",
+      "price": 135000,
+      "imageUrl": "../Image Products/Homeware/5.jpg",
+      "category": "homeware"
+    },
+    {
+      "id": "homeware-6",
+      "name": "Miyako Rice Cooker",
+      "price": 245000,
+      "imageUrl": "../Image Products/Homeware/6.jpg",
+      "category": "homeware"
+    },
+    {
+      "id": "homeware-7",
+      "name": "Miniso Diffuser",
+      "price": 199000,
+      "imageUrl": "../Image Products/Homeware/7.jpg",
+      "category": "homeware"
+    },
+    {
+      "id": "homeware-8",
+      "name": "Stand Hanger Baju",
+      "price": 65000,
+      "imageUrl": "../Image Products/Homeware/8.jpg",
+      "category": "homeware"
+    },
+    {
+      "id": "homeware-9",
+      "name": "Tefal Natura Wok Pan",
+      "price": 399000,
+      "imageUrl": "../Image Products/Homeware/9.jpg",
+      "category": "homeware"
+    },
+    {
+      "id": "homeware-10",
+      "name": "Informa Bean Bag",
+      "price": 799000,
+      "imageUrl": "../Image Products/Homeware/10.jpg",
+      "category": "homeware"
     }
   ]
 }

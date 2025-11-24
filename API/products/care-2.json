@@ -1,0 +1,14 @@
+{
+  "id": "care-2",
+  "name": "Scarlett Whitening Body Lotion - Jolly",
+  "price": 75000,
+  "description": "Lotion pencerah kulit dengan wangi mewah yang tahan lama.",
+  "spec": "300ml, Glutathione, Vitamin E, Niacinamide.",
+  "imageUrl": "../Image Products/Personal Care/2.jpg",
+  "category": "personal-care",
+  "marketplaces": {
+    "shopee": { "rating": 4.8, "sold": 25000, "url": "#" },
+    "tokopedia": { "rating": 4.8, "sold": 8000, "url": "#" },
+    "tiktok": { "rating": 4.7, "sold": 30000, "url": "#" }
+  }
+}

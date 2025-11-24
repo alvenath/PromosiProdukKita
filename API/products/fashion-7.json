@@ -1,0 +1,14 @@
+{
+  "id": "fashion-7",
+  "name": "UESS Shoulder Bag Women",
+  "price": 1300000,
+  "description": "Tas wanita elegan untuk aktivitas harian.",
+  "spec": "Faux leather, adjustable strap.",
+  "imageUrl": "../Image Products/Fashion/1_7.jpg",
+  "category": "fashion",
+  "marketplaces": {
+    "shopee": { "rating": 0, "sold": 0, "url": "#" },
+    "tokopedia": { "rating": 0, "sold": 0, "url": "#" },
+    "tiktok": { "rating": 0, "sold": 0, "url": "#" }
+  }
+}

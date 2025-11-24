@@ -1,52 +1,74 @@
-const carousels = document.querySelectorAll('.carousel');
+document.addEventListener('DOMContentLoaded', () => {
+  const apiURL = '../api/products-all.json';
 
-carousels.forEach(carousel => {
-  const wrapper = carousel.querySelector('.products-wrapper');
-  const btnLeft = carousel.querySelector('.carousel-button.left');
-  const btnRight = carousel.querySelector('.carousel-button.right');
+  // Panggil fungsi utama
+  loadHomeProducts();
 
-  // Duplicate children for infinite effect
-  wrapper.innerHTML += wrapper.innerHTML;
+  async function loadHomeProducts() {
+    try {
+      const response = await fetch(apiURL);
+      const data = await response.json();
+      const products = data.products;
 
-  const items = wrapper.querySelectorAll('.product-card');
-  const itemWidth = items[0].offsetWidth + 24; // 24px = your card gap, adjust if needed
+      // 1. Filter Produk untuk Carousel 1 (Fashion)
+      // Ambil 8 produk pertama dari kategori fashion
+      const fashionProducts = products.filter(p => p.category === 'fashion').slice(0, 8);
+      renderCarousel('wrapper-fashion', fashionProducts);
 
-  function getVisibleCount() {
-    return Math.floor(wrapper.clientWidth / itemWidth);
+      // 2. Filter Produk untuk Carousel 2 (Electronics)
+      // Ambil 8 produk pertama dari kategori electronics
+      const electronicProducts = products.filter(p => p.category === 'electronics').slice(0, 8);
+      renderCarousel('wrapper-electronics', electronicProducts);
+
+      // 3. Aktifkan Tombol Geser (Setelah produk dimuat)
+      setupCarouselButtons('carousel-fashion');
+      setupCarouselButtons('carousel-electronics');
+
+    } catch (error) {
+      console.error('Gagal memuat produk home:', error);
+    }
   }
 
-  function getGroupWidth() {
-    return getVisibleCount() * itemWidth;
+  function renderCarousel(wrapperId, products) {
+    const wrapper = document.getElementById(wrapperId);
+    wrapper.innerHTML = ''; // Bersihkan
+
+    products.forEach(product => {
+      const card = document.createElement('div');
+      card.className = 'product-card';
+      
+      // Link ke detail produk
+      const link = `../Product Page/product-detail.html?id=${product.id}`;
+
+      card.innerHTML = `
+        <a href="${link}" style="text-decoration: none; color: inherit;">
+          <img src="${product.imageUrl}" alt="${product.name}">
+          <div class="product-name">${product.name}</div>
+          <div class="product-price">Rp ${product.price.toLocaleString('id-ID')}</div>
+        </a>
+      `;
+      wrapper.appendChild(card);
+    });
   }
 
-  const maxScroll = (items.length * itemWidth) / 2;
+  function setupCarouselButtons(carouselId) {
+    const carousel = document.getElementById(carouselId);
+    if (!carousel) return;
 
-  btnRight.addEventListener('click', () => {
-    wrapper.scrollBy({ left: getGroupWidth(), behavior: 'smooth' });
-  });
+    const wrapper = carousel.querySelector('.products-wrapper');
+    const btnLeft = carousel.querySelector('.carousel-button.left');
+    const btnRight = carousel.querySelector('.carousel-button.right');
 
-  btnLeft.addEventListener('click', () => {
-    wrapper.scrollBy({ left: -getGroupWidth(), behavior: 'smooth' });
-  });
+    // Jarak geser (lebar kartu + gap)
+    // Asumsi lebar kartu sekitar 200-250px. Kita geser 300px agar aman.
+    const scrollAmount = 300; 
 
-  // Loop reset with smooth-safe snapping
-  let isSnapping = false;
-  wrapper.addEventListener('scroll', () => {
-    if (isSnapping) return;
-    isSnapping = true;
+    btnRight.addEventListener('click', () => {
+      wrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
 
-    setTimeout(() => {
-      if (wrapper.scrollLeft >= maxScroll - 5) {
-        wrapper.scrollLeft = 1;
-      } else if (wrapper.scrollLeft <= 0) {
-        wrapper.scrollLeft = maxScroll - 5;
-      }
-      isSnapping = false;
-    }, 200); // Delay matches scroll-behavior smooth
-  });
-
-  // Recalculate on resize
-  window.addEventListener('resize', () => {
-    wrapper.scrollLeft = 0;
-  });
+    btnLeft.addEventListener('click', () => {
+      wrapper.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+  }
 });

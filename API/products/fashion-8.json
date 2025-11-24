@@ -1,0 +1,14 @@
+{
+  "id": "fashion-8",
+  "name": "Erigo Flannel Shirt",
+  "price": 199000,
+  "description": "Kemeja flannel santai dengan motif kotak.",
+  "spec": "Cotton flannel, regular fit.",
+  "imageUrl": "../Image Products/Fashion/1_8.jpg",
+  "category": "fashion",
+  "marketplaces": {
+    "shopee": { "rating": 0, "sold": 0, "url": "#" },
+    "tokopedia": { "rating": 0, "sold": 0, "url": "#" },
+    "tiktok": { "rating": 0, "sold": 0, "url": "#" }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "care-9",
+  "name": "The Originote Hyalucera Moisturizer",
+  "price": 42000,
+  "description": "Moisturizer ringan untuk menjaga kelembapan dan merawat skin barrier.",
+  "spec": "50ml, Hyaluronic Acid, Ceramide, Chlorelina.",
+  "imageUrl": "../Image Products/Personal Care/9.jpg",
+  "category": "personal-care",
+  "marketplaces": {
+    "shopee": { "rating": 4.8, "sold": 150000, "url": "#" },
+    "tokopedia": { "rating": 4.8, "sold": 60000, "url": "#" },
+    "tiktok": { "rating": 4.7, "sold": 200000, "url": "#" }
+  }
+}

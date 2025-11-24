@@ -1,0 +1,14 @@
+{
+  "id": "care-8",
+  "name": "Grace and Glow Black Opium Body Wash",
+  "price": 54000,
+  "description": "Sabun mandi dengan wangi parfum mewah yang mencerahkan kulit.",
+  "spec": "400ml, Niacinamide, Glutathione.",
+  "imageUrl": "../Image Products/Personal Care/8.jpg",
+  "category": "personal-care",
+  "marketplaces": {
+    "shopee": { "rating": 4.8, "sold": 70000, "url": "#" },
+    "tokopedia": { "rating": 4.8, "sold": 30000, "url": "#" },
+    "tiktok": { "rating": 4.7, "sold": 100000, "url": "#" }
+  }
+}

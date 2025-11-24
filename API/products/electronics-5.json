@@ -1,0 +1,14 @@
+{
+  "id": "electronics-5",
+  "name": "Huawei Band 8 Smartband",
+  "price": 499000,
+  "description": "Smartband ultra-tipis dengan fitur pemantauan kesehatan lengkap dan baterai tahan 2 minggu.",
+  "spec": "AMOLED Display, SpO2 Monitoring, 14 Days Battery.",
+  "imageUrl": "../Image Products/Electronics/5.jpg",
+  "category": "electronics",
+  "marketplaces": {
+    "shopee": { "rating": 4.9, "sold": 20000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 10000, "url": "#" },
+    "tiktok": { "rating": 4.9, "sold": 15000, "url": "#" }
+  }
+}

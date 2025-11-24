@@ -27,7 +27,20 @@
         <span>🔍</span>
       </div>
       <div class="icon-button" title="Wishlist">♡⁠</div>
-      <a href="../LoginPage/login.html" class="icon-button" title="Profile">👤</a>
+      <div class="profile-container" style="position: relative; display: inline-block;">
+    
+    <a href="#" id="profile-btn" class="icon-button" title="Profile" style="text-decoration: none;">👤</a>
+
+    <div id="profile-menu" class="dropdown-menu">
+        <div class="dropdown-header">
+            <p id="dropdown-email">Memuat...</p>
+        </div>
+        <hr>
+        <a href="../ProfilePage/profile.html" class="dropdown-item">Lihat Profil Penuh</a>
+        <a href="#" id="dropdown-logout" class="dropdown-item logout">Logout</a>
+    </div>
+
+</div>
     </div>
   </header>
 
@@ -54,11 +67,13 @@
     <p id="product-spec" style="font-size: 14px; color: #555; margin-bottom: 0;">-</p>
 </div>
 
-        <div class="product-buttons">
+       <div class="product-buttons">
           <button class="btn btn-wishlist">Add to Wishlist</button>
-          <button class="btn btn-buy">Buy Now</button>
+          
+          <button id="btn-buy-action" class="btn btn-buy">
+            Beli via Marketplace ↓
+          </button>
         </div>
-      </div>
     </section>
 
     <section class="marketplace-section">

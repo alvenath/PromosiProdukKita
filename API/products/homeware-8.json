@@ -1,0 +1,14 @@
+{
+  "id": "homeware-8",
+  "name": "Double Pole Stand Hanger Rak Baju",
+  "price": 65000,
+  "description": "Rak gantungan baju ganda dengan tempat sepatu di bagian bawah.",
+  "spec": "Bahan Stainless Steel, Mudah Dirakit, Tinggi bisa diatur.",
+  "imageUrl": "../Image Products/Homeware/8.jpg",
+  "category": "homeware",
+  "marketplaces": {
+    "shopee": { "rating": 4.7, "sold": 50000, "url": "#" },
+    "tokopedia": { "rating": 4.8, "sold": 25000, "url": "#" },
+    "tiktok": { "rating": 4.6, "sold": 70000, "url": "#" }
+  }
+}

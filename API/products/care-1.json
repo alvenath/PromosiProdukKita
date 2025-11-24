@@ -1,0 +1,14 @@
+{
+  "id": "care-1",
+  "name": "Skintific 5X Ceramide Barrier Repair Moisture Gel",
+  "price": 139000,
+  "description": "Moisturizer dengan kandungan 5 jenis Ceramide untuk memperbaiki skin barrier yang rusak.",
+  "spec": "30g, Gel texture, Hyaluronic Acid, Centella Asiatica.",
+  "imageUrl": "../Image Products/Personal Care/1.jpg",
+  "category": "personal-care",
+  "marketplaces": {
+    "shopee": { "rating": 4.9, "sold": 10000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 5000, "url": "#" },
+    "tiktok": { "rating": 4.8, "sold": 15000, "url": "#" }
+  }
+}

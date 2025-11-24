@@ -1,0 +1,14 @@
+{
+  "id": "fashion-6",
+  "name": "Converse Chuck Taylor High",
+  "price": 899000,
+  "description": "Sepatu kanvas klasik high-cut.",
+  "spec": "Canvas upper, vulcanized sole.",
+  "imageUrl": "../Image Products/Fashion/1_6.jpg",
+  "category": "fashion",
+  "marketplaces": {
+    "shopee": { "rating": 0, "sold": 0, "url": "#" },
+    "tokopedia": { "rating": 0, "sold": 0, "url": "#" },
+    "tiktok": { "rating": 0, "sold": 0, "url": "#" }
+  }
+}

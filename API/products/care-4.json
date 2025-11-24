@@ -1,0 +1,14 @@
+{
+  "id": "care-4",
+  "name": "Kahf Oil and Acne Care Face Wash",
+  "price": 38000,
+  "description": "Sabun cuci muka pria untuk mengurangi minyak berlebih dan mencegah jerawat.",
+  "spec": "100ml, HydroBalance, Mediterranean Sage, French Cypress.",
+  "imageUrl": "../Image Products/Personal Care/4.jpg",
+  "category": "personal-care",
+  "marketplaces": {
+    "shopee": { "rating": 4.9, "sold": 80000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 45000, "url": "#" },
+    "tiktok": { "rating": 4.8, "sold": 90000, "url": "#" }
+  }
+}

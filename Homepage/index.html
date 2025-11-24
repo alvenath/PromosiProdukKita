@@ -22,7 +22,20 @@
         <span>🔍</span>
       </div>
       <div class="icon-button" title="Wishlist"><a href="../Wishlist Page/wishlist.html">♡</a></div>
-      <a href="../LoginPage/login.html" class="icon-button" title="Profile">👤</a>
+     <div class="profile-container" style="position: relative; display: inline-block;">
+    
+    <a href="#" id="profile-btn" class="icon-button" title="Profile" style="text-decoration: none;">👤</a>
+
+   <div id="profile-menu" class="dropdown-menu">
+        <div class="dropdown-header">
+            <span style="font-size: 10px; color: #888;">Login sebagai:</span>
+            <p id="dropdown-email" style="margin-top: 2px;">Memuat...</p>
+        </div>
+        <hr>
+        <a href="#" id="dropdown-logout" class="dropdown-item logout">Logout</a>
+    </div>
+
+</div>
     </div>
   </header>
 
@@ -33,40 +46,22 @@
     </div>
   </div>
 
-  <section>
-    <h3>Produk Unggulan <a href="#">LIHAT SEMUA →</a></h3>
-    <div class="carousel">
+ <section>
+    <h3>Produk Unggulan <a href="../Product Page/product.html">LIHAT SEMUA →</a></h3>
+    <div class="carousel" id="carousel-fashion">
       <button class="carousel-button left">‹</button>
-      <div class="products-wrapper">
-        <div class="product-card"><a href="../product-detail.html?id=1"><img src="../Image Products/Graffiti Shirt.jpg"><div class="product-name">Games On!</div><div class="product-price">Rp150.000</div></a></div>
-        <div class="product-card"><a href="../product-detail.html?id=2"><img src="../Image Products/Casual Summer.jpg"><div class="product-name">Elegance Summer</div><div class="product-price">Rp150.000</div></a></div>
-        <div class="product-card"><a href="../product-detail.html?id=3"><img src="../Image Products/Men Short Sleeved Y2k T-Shirt.jpg"><div class="product-name">I Can't Stand It</div><div class="product-price">Rp150.000</div></a></div>
-        <div class="product-card"><a href="../product-detail.html?id=4"><img src="../Image Products/black shirt.png"><div class="product-name">Black Tee</div><div class="product-price">Rp150.000</div></a></div>
-        <div class="product-card"><a href="../product-detail.html?id=5"><img src="../Image Products/Cartoon Star.jpg"><div class="product-name">Cartoon Star</div><div class="product-price">Rp150.000</div></a></div>
-        <div class="product-card"><a href="../product-detail.html?id=6"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></a></div>
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-    </div>
+      <div class="products-wrapper" id="wrapper-fashion">
+        </div>
       <button class="carousel-button right">›</button>
     </div>
   </section>
 
-  <section>
-    <h3>Produk Digital Unggulan <a href="#">LIHAT SEMUA →</a></h3>
-    <div class="carousel">
+ <section>
+    <h3>Elektronik & Gadget <a href="../Product Page/product.html">LIHAT SEMUA →</a></h3>
+    <div class="carousel" id="carousel-electronics">
       <button class="carousel-button left">‹</button>
-      <div class="products-wrapper">
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-        <div class="product-card"><img><div class="product-name">Nama Produk</div><div class="product-price">Rp150.000</div></div>
-      </div>
+      <div class="products-wrapper" id="wrapper-electronics">
+        </div>
       <button class="carousel-button right">›</button>
     </div>
   </section>

@@ -1,0 +1,14 @@
+{
+  "id": "electronics-7",
+  "name": "Rexus Daiva D68 Mechanical Keyboard",
+  "price": 450000,
+  "description": "Keyboard mekanikal 65% yang ringkas dengan fitur *hotswappable* dan RGB lighting.",
+  "spec": "68 Keys, Outemu Switch, RGB LED, Removable Cable.",
+  "imageUrl": "../Image Products/Electronics/7.jpg",
+  "category": "electronics",
+  "marketplaces": {
+    "shopee": { "rating": 4.8, "sold": 3000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 2500, "url": "#" },
+    "tiktok": { "rating": 4.7, "sold": 1500, "url": "#" }
+  }
+}

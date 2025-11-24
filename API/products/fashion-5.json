@@ -1,0 +1,14 @@
+{
+  "id": "fashion-5",
+  "name": "H&M Hoodie Men Basic",
+  "price": 299000,
+  "description": "Hoodie kasual nyaman dengan warna solid.",
+  "spec": "Cotton blend, regular fit.",
+  "imageUrl": "../Image Products/Fashion/1_5.jpg",
+  "category": "fashion",
+  "marketplaces": {
+    "shopee": { "rating": 0, "sold": 0, "url": "#" },
+    "tokopedia": { "rating": 0, "sold": 0, "url": "#" },
+    "tiktok": { "rating": 0, "sold": 0, "url": "#" }
+  }
+}

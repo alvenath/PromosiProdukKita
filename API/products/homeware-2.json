@@ -1,0 +1,14 @@
+{
+  "id": "homeware-2",
+  "name": "Kintakun Sprei D'Luxe Disperse King Size",
+  "price": 95000,
+  "description": "Sprei dengan bahan microtex yang halus, lembut, dan warna tidak luntur.",
+  "spec": "Ukuran 180x200, Termasuk 2 Sarung Bantal & 2 Guling.",
+  "imageUrl": "../Image Products/Homeware/2.jpg",
+  "category": "homeware",
+  "marketplaces": {
+    "shopee": { "rating": 4.9, "sold": 200000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 90000, "url": "#" },
+    "tiktok": { "rating": 4.8, "sold": 150000, "url": "#" }
+  }
+}

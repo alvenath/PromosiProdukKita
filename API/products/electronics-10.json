@@ -1,0 +1,14 @@
+{
+  "id": "electronics-10",
+  "name": "SanDisk Ultra Dual Drive Luxe USB Type-C 64GB",
+  "price": 110000,
+  "description": "Flashdisk 2-in-1 dengan konektor USB Type-C dan Type-A dalam desain logam yang elegan.",
+  "spec": "64GB, USB 3.1 Gen 1, Speed up to 150MB/s.",
+  "imageUrl": "../Image Products/Electronics/10.jpg",
+  "category": "electronics",
+  "marketplaces": {
+    "shopee": { "rating": 4.9, "sold": 25000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 20000, "url": "#" },
+    "tiktok": { "rating": 4.8, "sold": 10000, "url": "#" }
+  }
+}

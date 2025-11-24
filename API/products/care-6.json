@@ -1,0 +1,14 @@
+{
+  "id": "care-6",
+  "name": "Somethinc Niacinamide + Moisture Beet Serum",
+  "price": 115000,
+  "description": "Serum untuk memperkuat skin barrier, mencerahkan, dan menyamarkan noda hitam.",
+  "spec": "20ml, Niacinamide 10%, Beetroot Extract.",
+  "imageUrl": "../Image Products/Personal Care/6.jpg",
+  "category": "personal-care",
+  "marketplaces": {
+    "shopee": { "rating": 4.9, "sold": 55000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 30000, "url": "#" },
+    "tiktok": { "rating": 4.9, "sold": 60000, "url": "#" }
+  }
+}

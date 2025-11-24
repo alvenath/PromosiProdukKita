@@ -1,0 +1,14 @@
+{
+  "id": "homeware-4",
+  "name": "LocknLock Classic Food Container Set",
+  "price": 250000,
+  "description": "Wadah makanan kedap udara dan anti bocor, menjaga makanan tetap segar lebih lama.",
+  "spec": "BPA Free, Microwave Safe, Isi 5 Pcs.",
+  "imageUrl": "../Image Products/Homeware/4.jpg",
+  "category": "homeware",
+  "marketplaces": {
+    "shopee": { "rating": 5.0, "sold": 12000, "url": "#" },
+    "tokopedia": { "rating": 5.0, "sold": 8000, "url": "#" },
+    "tiktok": { "rating": 4.9, "sold": 5000, "url": "#" }
+  }
+}

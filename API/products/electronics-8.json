@@ -1,0 +1,14 @@
+{
+  "id": "electronics-8",
+  "name": "Samsung Galaxy A55 5G 8/256GB",
+  "price": 5999000,
+  "description": "Smartphone dengan desain premium, kamera awesome, dan performa kencang untuk gaming.",
+  "spec": "Exynos 1480, Super AMOLED 120Hz, 50MP Camera.",
+  "imageUrl": "../Image Products/Electronics/8.jpg",
+  "category": "electronics",
+  "marketplaces": {
+    "shopee": { "rating": 4.9, "sold": 1200, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 1000, "url": "#" },
+    "tiktok": { "rating": 4.8, "sold": 800, "url": "#" }
+  }
+}

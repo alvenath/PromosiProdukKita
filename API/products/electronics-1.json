@@ -1,0 +1,14 @@
+{
+  "id": "electronics-1",
+  "name": "Baseus Bowie E16 True Wireless Earbuds",
+  "price": 189000,
+  "description": "Earphone TWS dengan kualitas suara jernih, bass mantap, dan daya tahan baterai hingga 30 jam.",
+  "spec": "Bluetooth 5.3, 30H Playtime, IPX4 Water Resistant.",
+  "imageUrl": "../Image Products/Electronics/1.jpg",
+  "category": "electronics",
+  "marketplaces": {
+    "shopee": { "rating": 4.9, "sold": 10000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 8500, "url": "#" },
+    "tiktok": { "rating": 4.8, "sold": 12000, "url": "#" }
+  }
+}

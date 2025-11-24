@@ -56,6 +56,27 @@ async function fetchProductDetails(productId) {
         document.getElementById('link-tiktok').href = product.marketplaces.tiktok.url;
     }
 
+    // ... (kode pengisian data shopee/tokopedia sebelumnya) ...
+
+    // 3. LOGIKA TOMBOL "BELI VIA MARKETPLACE" (BARU)
+    const buyBtn = document.getElementById('btn-buy-action');
+    const marketplaceSection = document.querySelector('.marketplace-section');
+
+    if (buyBtn && marketplaceSection) {
+        buyBtn.addEventListener('click', () => {
+            // Efek scroll halus ke bawah
+            marketplaceSection.scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'start' 
+            });
+            
+            // Opsional: Beri efek kedip pada kartu marketplace agar user sadar
+            marketplaceSection.style.opacity = '0.5';
+            setTimeout(() => { marketplaceSection.style.opacity = '1'; }, 300);
+        });
+    }
+
+
   } catch (error) {
     console.error('Error:', error);
     document.querySelector('.product-details-grid').innerHTML = `<p>${error.message}</p>`;

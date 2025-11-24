@@ -1,0 +1,14 @@
+{
+  "id": "fashion-9",
+  "name": "Vans Old Skool Black White",
+  "price": 999000,
+  "description": "Sneakers klasik dengan side stripe ikonik.",
+  "spec": "Suede/canvas upper, waffle outsole.",
+  "imageUrl": "../Image Products/Fashion/1_9.jpg",
+  "category": "fashion",
+  "marketplaces": {
+    "shopee": { "rating": 0, "sold": 0, "url": "#" },
+    "tokopedia": { "rating": 0, "sold": 0, "url": "#" },
+    "tiktok": { "rating": 0, "sold": 0, "url": "#" }
+  }
+}

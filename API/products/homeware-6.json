@@ -1,0 +1,14 @@
+{
+  "id": "homeware-6",
+  "name": "Miyako MCM-508 Rice Cooker 3 in 1",
+  "price": 245000,
+  "description": "Penanak nasi legendaris dengan fungsi memasak, mengukus, dan menghangatkan.",
+  "spec": "Kapasitas 1.8 Liter, Panci Anti Lengket, 395 Watt.",
+  "imageUrl": "../Image Products/Homeware/6.jpg",
+  "category": "homeware",
+  "marketplaces": {
+    "shopee": { "rating": 4.9, "sold": 15000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 10000, "url": "#" },
+    "tiktok": { "rating": 4.8, "sold": 5000, "url": "#" }
+  }
+}

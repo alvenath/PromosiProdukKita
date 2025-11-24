@@ -1,0 +1,14 @@
+{
+  "id": "fashion-10",
+  "name": "Zara Slim Fit Chinos",
+  "price": 549000,
+  "description": "Celana chinos slim fit modern untuk semi-formal.",
+  "spec": "Cotton twill, slim cut.",
+  "imageUrl": "../Image Products/Fashion/1_10.jpg",
+  "category": "fashion",
+  "marketplaces": {
+    "shopee": { "rating": 0, "sold": 0, "url": "#" },
+    "tokopedia": { "rating": 0, "sold": 0, "url": "#" },
+    "tiktok": { "rating": 0, "sold": 0, "url": "#" }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "fashion-4",
+  "name": "Adidas SST Track Jacket",
+  "price": 1100000,
+  "description": "Jaket track ikonik dengan tiga garis khas Adidas.",
+  "spec": "Polyester tricot, zipper front, ribbed cuff.",
+  "imageUrl": "../Image Products/Fashion/1_4.jpg",
+  "category": "fashion",
+  "marketplaces": {
+    "shopee": { "rating": 0, "sold": 0, "url": "#" },
+    "tokopedia": { "rating": 0, "sold": 0, "url": "#" },
+    "tiktok": { "rating": 0, "sold": 0, "url": "#" }
+  }
+}

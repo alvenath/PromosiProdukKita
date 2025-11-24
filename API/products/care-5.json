@@ -1,0 +1,14 @@
+{
+  "id": "care-5",
+  "name": "Avoskin Miraculous Refining Toner",
+  "price": 169000,
+  "description": "Exfoliating toner untuk mengangkat sel kulit mati, mencerahkan, dan meratakan warna kulit.",
+  "spec": "100ml, AHA BHA PHA, Niacinamide, Tea Tree.",
+  "imageUrl": "../Image Products/Personal Care/5.jpg",
+  "category": "personal-care",
+  "marketplaces": {
+    "shopee": { "rating": 4.8, "sold": 12000, "url": "#" },
+    "tokopedia": { "rating": 4.9, "sold": 8000, "url": "#" },
+    "tiktok": { "rating": 4.8, "sold": 10000, "url": "#" }
+  }
+}

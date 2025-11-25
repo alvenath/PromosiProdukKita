@@ -102,6 +102,9 @@
   padding: 40px;
   background-image: url("../Banner/banner.jpeg");
   text-align: center;
+
+  display: block; /* Membatalkan 'display: flex' dari Homepage */
+  width: auto;    /* Reset lebar jika perlu */
 }
 
 /* ANIMATION START STATES */

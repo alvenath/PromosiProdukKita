@@ -19,3 +19,5 @@ if (!firebase.apps.length) {
 
 // 3. Simpan modul Auth ke dalam variabel agar bisa dipakai di login.js/register.js
 const auth = firebase.auth();
+
+const db = firebase.firestore(); // <--- TAMBAHAN BARU INI

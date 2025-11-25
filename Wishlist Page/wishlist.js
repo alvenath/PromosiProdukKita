@@ -1,73 +1,104 @@
-    // Basic filtering + sorting logic
-    const grid = document.getElementById('productGrid');
-    const cards = Array.from(grid.querySelectorAll('.card'));
-    const countEl = document.getElementById('count');
-    const sortSelect = document.getElementById('sortSelect');
-    const applyBtn = document.getElementById('applyBtn');
-    const clearBtn = document.getElementById('clearBtn');
+document.addEventListener('DOMContentLoaded', () => {
+    const wishlistGrid = document.getElementById('wishlist-grid');
+    const statusText = document.getElementById('wishlist-status');
+    const searchInput = document.querySelector('.search-container input');
 
-    function updateCount(){
-      const visible = cards.filter(c => c.style.display !== 'none').length;
-      countEl.textContent = visible;
+    let currentWishlistData = []; 
+
+    // 1. AMBIL DAFTAR ID DARI BROWSER (LocalStorage)
+    let wishlistIds = JSON.parse(localStorage.getItem('myWishlist')) || [];
+
+    if (wishlistIds.length === 0) {
+        statusText.textContent = "Anda belum menambahkan barang apa pun ke wishlist.";
+        return;
     }
 
-    function getSelectedFilters(){
-      const stock = document.querySelector('input[name="stock"]:checked')?.value || 'all';
-      const price = document.querySelector('input[name="price"]:checked')?.value || 'all';
-      const cats = Array.from(document.querySelectorAll('input[name="cat"]:checked')).map(i=>i.value);
-      return {stock, price, cats};
+    // 2. AMBIL DATA LENGKAP DARI DATABASE PRODUK (JSON)
+    fetch('../api/products-all.json')
+        .then(response => response.json())
+        .then(data => {
+            const allProducts = data.products;
+            
+            // Filter: Ambil produk yang ID-nya ada di daftar wishlist kita
+            currentWishlistData = allProducts.filter(product => wishlistIds.includes(product.id.toString()));
+
+            renderWishlist(currentWishlistData);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            statusText.textContent = "Gagal memuat data produk.";
+        });
+
+    // 3. FITUR SEARCH DI HALAMAN WISHLIST
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const keyword = e.target.value.toLowerCase();
+            const filteredProducts = currentWishlistData.filter(product => 
+                product.name.toLowerCase().includes(keyword)
+            );
+            renderWishlist(filteredProducts);
+        });
     }
 
-    function applyFilters(){
-      const {stock, price, cats} = getSelectedFilters();
+    // FUNGSI TAMPILKAN PRODUK
+    function renderWishlist(products) {
+        wishlistGrid.innerHTML = '';
 
-      cards.forEach(card=>{
-        const cStock = card.dataset.stock;
-        const cPrice = Number(card.dataset.price);
-        const cCat = card.dataset.category;
-
-        let visible = true;
-        if(stock !== 'all' && cStock !== stock) visible = false;
-
-        if(price !== 'all'){
-          if(price === '0-50' && !(cPrice >=0 && cPrice <=50)) visible = false;
-          if(price === '50-150' && !(cPrice >=50 && cPrice <=150)) visible = false;
-          if(price === '150+' && !(cPrice >150)) visible = false;
+        if (products.length === 0) {
+            if (currentWishlistData.length > 0) {
+                statusText.textContent = "Produk yang dicari tidak ditemukan.";
+            } else {
+                statusText.textContent = "Wishlist Anda kosong.";
+            }
+            return;
         }
 
-        if(cats.length>0 && !cats.includes(cCat)) visible = false;
+        statusText.textContent = `Menampilkan ${products.length} barang impian.`;
 
-        card.style.display = visible ? '' : 'none';
-      });
+        products.forEach(product => {
+            const card = document.createElement('div');
+            card.className = 'product-card';
+            // Pakai style paksa agar langsung muncul (tanpa nunggu animasi scroll)
+            card.style.opacity = '1'; 
+            card.style.transform = 'none';
+            
+            const link = `../Product Page/product-detail.html?id=${product.id}`;
 
-      updateCount();
+            card.innerHTML = `
+                <a href="${link}" style="text-decoration: none; color: inherit;">
+                    <div style="overflow: hidden; border-radius: 4px;">
+                        <img src="${product.imageUrl}" class="product-image" alt="${product.name}" style="object-fit: cover; object-position: top;">
+                    </div>
+                    <div class="name-size">
+                        <div class="product-name">${product.name}</div>
+                    </div>
+                    <div class="price">Rp ${product.price.toLocaleString('id-ID')}</div>
+                </a>
+                <button class="remove-btn" data-id="${product.id}" style="width: 100%; padding: 8px; margin-top: 10px; background: #ffe5e5; color: #d8000c; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">
+                    Hapus
+                </button>
+            `;
+            
+            wishlistGrid.appendChild(card);
+        });
+
+        // Aktifkan Tombol Hapus
+        document.querySelectorAll('.remove-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const idToRemove = e.target.getAttribute('data-id');
+                removeFromWishlist(idToRemove);
+            });
+        });
     }
 
-    function clearFilters(){
-      document.querySelectorAll('input[type=checkbox]').forEach(i=>i.checked=false);
-      document.querySelectorAll('input[name=stock]').forEach(i=>{ if(i.value==='all') i.checked=true});
-      document.querySelectorAll('input[name=price]').forEach(i=>{ if(i.value==='all') i.checked=true});
-      applyFilters();
+    function removeFromWishlist(id) {
+        // Hapus dari array
+        wishlistIds = wishlistIds.filter(itemId => itemId !== id.toString());
+        // Simpan balik ke browser
+        localStorage.setItem('myWishlist', JSON.stringify(wishlistIds));
+        
+        // Hapus dari tampilan tanpa refresh
+        currentWishlistData = currentWishlistData.filter(p => p.id.toString() !== id.toString());
+        renderWishlist(currentWishlistData);
     }
-
-    function sortProducts(){
-      const val = sortSelect.value;
-      let sorted = [...cards];
-      if(val === 'price-asc') sorted.sort((a,b)=>Number(a.dataset.price)-Number(b.dataset.price));
-      else if(val === 'price-desc') sorted.sort((a,b)=>Number(b.dataset.price)-Number(a.dataset.price));
-      else if(val === 'name') sorted.sort((a,b)=>a.dataset.name.localeCompare(b.dataset.name));
-      else if(val === 'new') sorted = cards; // default order
-
-      // append in order (only append visible ones in sorted order)
-      sorted.forEach(c=>grid.appendChild(c));
-    }
-
-    applyBtn.addEventListener('click', ()=>{ applyFilters(); sortProducts(); });
-    clearBtn.addEventListener('click', ()=>{ clearFilters(); sortProducts(); });
-    sortSelect.addEventListener('change', ()=>{ sortProducts(); });
-
-    // init
-    updateCount();
-
-    // small enhancement: allow Enter to apply when pressing Enter in sidebar
-    document.querySelectorAll('.sidebar input').forEach(i=>i.addEventListener('keydown', (e)=>{ if(e.key==='Enter'){ applyFilters(); sortProducts(); }}));
+});

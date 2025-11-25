@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="product-detail.css">
+  <link rel="stylesheet" href="../Homepage/styles.css">
 </head>
 <body>
 
@@ -21,59 +22,52 @@
       <a href="../Product Page/product.html" class="active">Products</a>
       <a href="../Contact Page/contact.html">Contact</a>
     </nav>
+    
     <div class="header-right">
       <div class="search-container">
         <input type="search" placeholder="Search product..." />
         <span>🔍</span>
       </div>
-      <div class="icon-button" title="Wishlist">♡⁠</div>
+
+      <a href="../Wishlist Page/wishlist.html" class="icon-button" title="Wishlist" style="text-decoration: none; color: inherit;">♡⁠</a>
+
       <div class="profile-container" style="position: relative; display: inline-block;">
-    
-    <a href="#" id="profile-btn" class="icon-button" title="Profile" style="text-decoration: none;">👤</a>
-
-    <div id="profile-menu" class="dropdown-menu">
-        <div class="dropdown-header">
-            <p id="dropdown-email">Memuat...</p>
+        <a href="#" id="profile-btn" class="icon-button" title="Profile" style="text-decoration: none;">👤</a>
+        
+        <div id="profile-menu" class="dropdown-menu">
+            <div class="dropdown-header">
+                <span style="font-size: 10px; color: #888;">Login sebagai:</span>
+                <p id="dropdown-email" style="margin-top: 2px;">Memuat...</p>
+            </div>
+            <hr>
+            <a href="#" id="dropdown-logout" class="dropdown-item logout">Logout</a>
         </div>
-        <hr>
-        <a href="../ProfilePage/profile.html" class="dropdown-item">Lihat Profil Penuh</a>
-        <a href="#" id="dropdown-logout" class="dropdown-item logout">Logout</a>
-    </div>
-
-</div>
+      </div>
     </div>
   </header>
 
   <main class="container">
 
     <section class="product-details-grid">
-      
       <div class="product-gallery">
         <img id="product-image" src="" alt="Memuat gambar produk...">
-        <button class="gallery-arrow right">›</button>
       </div>
 
       <div class="product-info">
-        <h1 id="product-name"></h1>
-        <div id="product-price" class="price"></div>
-        <p id="product-description" class="description"></p>
-      
-        <div id="product-price" class="price"></div>
-
-    <p id="product-description" class="description"></p>
-
-      <div class="specification-box" style="background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
-    <h4 style="margin-top: 0;">Spesifikasi:</h4>
-    <p id="product-spec" style="font-size: 14px; color: #555; margin-bottom: 0;">-</p>
-</div>
-
-       <div class="product-buttons">
-          <button class="btn btn-wishlist">Add to Wishlist</button>
-          
-          <button id="btn-buy-action" class="btn btn-buy">
-            Beli via Marketplace ↓
-          </button>
+        <h1 id="product-name">Memuat Nama...</h1>
+        <div id="product-price" class="price">Rp 0</div>
+        <p id="product-description" class="description">Memuat deskripsi...</p>
+        
+        <div class="specification-box" style="background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <h4 style="margin-top: 0;">Spesifikasi:</h4>
+            <p id="product-spec" style="font-size: 14px; color: #555; margin-bottom: 0;">-</p>
         </div>
+
+        <div class="product-buttons">
+          <button class="btn btn-wishlist">Add to Wishlist</button>
+          <button id="btn-buy-action" class="btn btn-buy">Beli via Marketplace ↓</button>
+        </div>
+      </div>
     </section>
 
     <section class="marketplace-section">
@@ -81,57 +75,46 @@
       <p>Cek apa kata pembeli di platform kesayangan Anda:</p>
 
       <div class="marketplace-grid">
-        
         <div class="marketplace-card shopee">
           <div class="mp-header">
-            <span class="mp-name">Shopee</span>
-            <span class="mp-star">★</span>
+            <span class="mp-name">Shopee</span><span class="mp-star">★</span>
           </div>
-          <div class="mp-rating">
-            <span id="rate-shopee" class="score">0.0</span>
-            <span class="scale">/ 5.0</span>
-          </div>
+          <div class="mp-rating"><span id="rate-shopee" class="score">0.0</span>/5.0</div>
           <p class="mp-sold"><span id="sold-shopee">0</span> Terjual</p>
           <a id="link-shopee" href="#" target="_blank" class="mp-btn">Cek di Shopee</a>
         </div>
 
         <div class="marketplace-card tokopedia">
           <div class="mp-header">
-            <span class="mp-name">Tokopedia</span>
-            <span class="mp-star">★</span>
+            <span class="mp-name">Tokopedia</span><span class="mp-star">★</span>
           </div>
-          <div class="mp-rating">
-            <span id="rate-tokopedia" class="score">0.0</span>
-            <span class="scale">/ 5.0</span>
-          </div>
+          <div class="mp-rating"><span id="rate-tokopedia" class="score">0.0</span>/5.0</div>
           <p class="mp-sold"><span id="sold-tokopedia">0</span> Terjual</p>
           <a id="link-tokopedia" href="#" target="_blank" class="mp-btn">Cek di Tokopedia</a>
         </div>
 
         <div class="marketplace-card tiktok">
           <div class="mp-header">
-            <span class="mp-name">TikTok Shop</span>
-            <span class="mp-star">★</span>
+            <span class="mp-name">TikTok Shop</span><span class="mp-star">★</span>
           </div>
-          <div class="mp-rating">
-            <span id="rate-tiktok" class="score">0.0</span>
-            <span class="scale">/ 5.0</span>
-          </div>
+          <div class="mp-rating"><span id="rate-tiktok" class="score">0.0</span>/5.0</div>
           <p class="mp-sold"><span id="sold-tiktok">0</span> Terjual</p>
           <a id="link-tiktok" href="#" target="_blank" class="mp-btn">Cek di TikTok</a>
         </div>
-
       </div>
     </section>
 
   </main>
 
-  <script src="product-detail.js"></script>
-
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+
   <script src="../scripts/firebase-init.js"></script>
   <script src="../scripts/nav.js"></script>
+  
+  <script src="product-detail.js"></script>
 
 </body>
 </html>

@@ -7,8 +7,8 @@
   "imageUrl": "../Image Products/Fashion/1_10.jpg",
   "category": "fashion",
   "marketplaces": {
-    "shopee": { "rating": 0, "sold": 0, "url": "#" },
-    "tokopedia": { "rating": 0, "sold": 0, "url": "#" },
-    "tiktok": { "rating": 0, "sold": 0, "url": "#" }
+    "shopee": { "rating": 4.9, "sold": 38580, "url": "#" },
+    "tokopedia": { "rating": 5.0, "sold": 48340, "url": "#" },
+    "tiktok": { "rating": 5.0, "sold": 19430, "url": "#" }
   }
 }

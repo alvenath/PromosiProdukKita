@@ -8,18 +8,18 @@
   "category": "fashion",
   "marketplaces": {
     "shopee": {
-      "rating": 0,
-      "sold": 0,
+      "rating": 4.8,
+      "sold": 95000,
       "url": "https://id.shp.ee/Bx93yHg"
     },
     "tokopedia": {
-      "rating": 0,
-      "sold": 0,
+      "rating": 5.0,
+      "sold": 100000,
       "url": "https://tk.tokopedia.com/ZSfN7wuNm/"
     },
     "tiktok": {
-      "rating": 0,
-      "sold": 0,
+      "rating": 4.9,
+      "sold": 125000,
       "url": "https://vt.tokopedia.com/t/ZSH3b3eos7oPE-aWcB1/"
     }
   }

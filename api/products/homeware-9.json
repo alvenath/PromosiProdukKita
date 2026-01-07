@@ -7,8 +7,8 @@
   "imageUrl": "../Image Products/Homeware/9.jpg",
   "category": "homeware",
   "marketplaces": {
-    "shopee": { "rating": 5.0, "sold": 3000, "url": "#" },
-    "tokopedia": { "rating": 5.0, "sold": 2000, "url": "#" },
-    "tiktok": { "rating": 4.9, "sold": 1000, "url": "#" }
+    "shopee": { "rating": 5.0, "sold": 3000, "url": "https://id.shp.ee/Toj59uN" },
+    "tokopedia": { "rating": 5.0, "sold": 2000, "url": "https://tk.tokopedia.com/ZS59tuXKa/" },
+    "tiktok": { "rating": 4.9, "sold": 1000, "url": "https://vt.tokopedia.com/t/ZSHE4KgDYPppU-WR8sM/" }
   }
 }

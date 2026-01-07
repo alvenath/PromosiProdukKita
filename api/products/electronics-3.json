@@ -7,8 +7,8 @@
   "imageUrl": "../Image Products/Electronics/3.jpg",
   "category": "electronics",
   "marketplaces": {
-    "shopee": { "rating": 4.9, "sold": 15000, "url": "#" },
-    "tokopedia": { "rating": 5.0, "sold": 9000, "url": "#" },
-    "tiktok": { "rating": 4.9, "sold": 5000, "url": "#" }
+    "shopee": { "rating": 4.9, "sold": 15000, "url": "https://id.shp.ee/Ka43Uai" },
+    "tokopedia": { "rating": 5.0, "sold": 9000, "url": "https://tk.tokopedia.com/ZS59GAFwY/" },
+    "tiktok": { "rating": 4.9, "sold": 5000, "url": "https://vt.tokopedia.com/t/ZSHE4TA8u2ETF-6b4yx/" }
   }
 }

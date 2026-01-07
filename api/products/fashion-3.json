@@ -7,8 +7,8 @@
   "imageUrl": "../Image Products/Fashion/1_3.jpg",
   "category": "fashion",
   "marketplaces": {
-    "shopee": { "rating": 4.5, "sold": 30000, "url": "#" },
-    "tokopedia": { "rating": 4.8, "sold": 50000, "url": "#" },
-    "tiktok": { "rating": 4.7, "sold": 40000, "url": "#" }
+    "shopee": { "rating": 4.5, "sold": 30000, "url": "https://id.shp.ee/LY5Ho3z" },
+    "tokopedia": { "rating": 4.8, "sold": 50000, "url": "https://tk.tokopedia.com/ZS59gD9qB/" },
+    "tiktok": { "rating": 4.7, "sold": 40000, "url": "https://vt.tokopedia.com/t/ZSHE4WfkfXHpm-yGVlT/" }
   }
 }

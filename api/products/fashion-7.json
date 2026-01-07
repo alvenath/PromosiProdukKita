@@ -1,14 +1,14 @@
 {
   "id": "fashion-7",
-  "name": "UESS Shoulder Bag Women",
+  "name": "GUESS Shoulder Bag Women",
   "price": 1300000,
   "description": "Tas wanita elegan untuk aktivitas harian.",
   "spec": "Faux leather, adjustable strap.",
   "imageUrl": "../Image Products/Fashion/1_7.jpg",
   "category": "fashion",
   "marketplaces": {
-    "shopee": { "rating": 4.7, "sold": 7000, "url": "#" },
-    "tokopedia": { "rating": 4.8, "sold": 9000, "url": "#" },
-    "tiktok": { "rating": 4.8, "sold": 3000, "url": "#" }
+    "shopee": { "rating": 4.7, "sold": 7000, "url": "https://id.shp.ee/kG43Cr8" },
+    "tokopedia": { "rating": 4.8, "sold": 9000, "url": "https://tk.tokopedia.com/ZS59sL5te/" },
+    "tiktok": { "rating": 4.8, "sold": 3000, "url": "https://vt.tokopedia.com/t/ZSHE4c8WJjEgH-0iOtj/" }
   }
 }

@@ -10,17 +10,17 @@
     "shopee": {
       "rating": 5.0,
       "sold": 500,
-      "url": "#"
+      "url": "https://id.shp.ee/7SsA29x"
     },
     "tokopedia": {
       "rating": 4.8,
       "sold": 230,
-      "url": "#"
+      "url": "https://tk.tokopedia.com/ZS59bchdB/"
     },
     "tiktok": {
       "rating": 4.8,
       "sold": 100,
-      "url": "#"
+      "url": "https://vt.tokopedia.com/t/ZSHE4W1CgcYeC-XffSD/"
     }
   }
 }

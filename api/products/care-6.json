@@ -7,8 +7,8 @@
   "imageUrl": "../Image Products/Personal Care/6.jpg",
   "category": "personal-care",
   "marketplaces": {
-    "shopee": { "rating": 4.9, "sold": 55000, "url": "#" },
-    "tokopedia": { "rating": 4.9, "sold": 30000, "url": "#" },
-    "tiktok": { "rating": 4.9, "sold": 60000, "url": "#" }
+    "shopee": { "rating": 4.9, "sold": 55000, "url": "https://id.shp.ee/3mxN5Eu" },
+    "tokopedia": { "rating": 4.9, "sold": 30000, "url": "https://tk.tokopedia.com/ZS59pKYTo/" },
+    "tiktok": { "rating": 4.9, "sold": 60000, "url": "https://vt.tokopedia.com/t/ZSHE4cjoVDkRc-et6C8/" }
   }
 }
